@@ -15,6 +15,7 @@ namespace Bicycle_Rental
         public Main()
         {
             InitializeComponent();
+            string u = "juhu";
         }
     }
 }
