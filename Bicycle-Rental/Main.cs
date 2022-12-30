@@ -120,5 +120,6 @@ namespace Bicycle_Rental
                 Contact_panel.Visible = false;
             }
         }
+
     }
 }
