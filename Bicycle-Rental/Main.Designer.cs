@@ -32,6 +32,12 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.GioHang_button = new Guna.UI2.WinForms.Guna2Button();
+            this.Home_button = new Guna.UI2.WinForms.Guna2Button();
+            this.Bike_button = new Guna.UI2.WinForms.Guna2Button();
+            this.Tour_button = new Guna.UI2.WinForms.Guna2Button();
+            this.Info_button = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -39,47 +45,162 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.DimGray;
+            this.guna2Panel1.Controls.Add(this.GioHang_button);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1180, 35);
+            this.guna2Panel1.Size = new System.Drawing.Size(885, 28);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2ShadowPanel1.Controls.Add(this.Info_button);
+            this.guna2ShadowPanel1.Controls.Add(this.Bike_button);
+            this.guna2ShadowPanel1.Controls.Add(this.Tour_button);
+            this.guna2ShadowPanel1.Controls.Add(this.Home_button);
             this.guna2ShadowPanel1.Controls.Add(this.pictureBox1);
             this.guna2ShadowPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(0, 35);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(0, 28);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowDepth = 40;
             this.guna2ShadowPanel1.ShadowShift = 2;
             this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.G360400081A33240D0117.G211E0E1C05210D;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1180, 91);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(885, 74);
             this.guna2ShadowPanel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(29, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(376, 81);
+            this.pictureBox1.Size = new System.Drawing.Size(282, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // GioHang_button
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.GioHang_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GioHang_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GioHang_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GioHang_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GioHang_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GioHang_button.FillColor = System.Drawing.Color.Transparent;
+            this.GioHang_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GioHang_button.ForeColor = System.Drawing.Color.White;
+            this.GioHang_button.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.GioHang_button.Image = ((System.Drawing.Image)(resources.GetObject("GioHang_button.Image")));
+            this.GioHang_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GioHang_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.GioHang_button.Location = new System.Drawing.Point(683, 0);
+            this.GioHang_button.Name = "GioHang_button";
+            this.GioHang_button.Size = new System.Drawing.Size(150, 28);
+            this.GioHang_button.TabIndex = 1;
+            this.GioHang_button.Text = "0 item - 0 đ";
+            this.GioHang_button.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // Home_button
+            // 
+            this.Home_button.BackColor = System.Drawing.Color.Transparent;
+            this.Home_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Home_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Home_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Home_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Home_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Home_button.FillColor = System.Drawing.Color.Transparent;
+            this.Home_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Home_button.ForeColor = System.Drawing.Color.Gray;
+            this.Home_button.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Home_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Home_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Home_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.Home_button.Location = new System.Drawing.Point(401, 21);
+            this.Home_button.Name = "Home_button";
+            this.Home_button.Size = new System.Drawing.Size(80, 30);
+            this.Home_button.TabIndex = 1;
+            this.Home_button.Text = "Home";
+            // 
+            // Bike_button
+            // 
+            this.Bike_button.BackColor = System.Drawing.Color.Transparent;
+            this.Bike_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bike_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Bike_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Bike_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Bike_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Bike_button.FillColor = System.Drawing.Color.Transparent;
+            this.Bike_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bike_button.ForeColor = System.Drawing.Color.Gray;
+            this.Bike_button.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Bike_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Bike_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Bike_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.Bike_button.Location = new System.Drawing.Point(487, 21);
+            this.Bike_button.Name = "Bike_button";
+            this.Bike_button.Size = new System.Drawing.Size(80, 30);
+            this.Bike_button.TabIndex = 1;
+            this.Bike_button.Text = "Bike";
+            // 
+            // Tour_button
+            // 
+            this.Tour_button.BackColor = System.Drawing.Color.Transparent;
+            this.Tour_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Tour_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Tour_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Tour_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Tour_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Tour_button.FillColor = System.Drawing.Color.Transparent;
+            this.Tour_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tour_button.ForeColor = System.Drawing.Color.Gray;
+            this.Tour_button.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Tour_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Tour_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Tour_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.Tour_button.Location = new System.Drawing.Point(573, 21);
+            this.Tour_button.Name = "Tour_button";
+            this.Tour_button.Size = new System.Drawing.Size(80, 30);
+            this.Tour_button.TabIndex = 1;
+            this.Tour_button.Text = "Tour";
+            // 
+            // Info_button
+            // 
+            this.Info_button.BackColor = System.Drawing.Color.Transparent;
+            this.Info_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Info_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Info_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Info_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Info_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Info_button.FillColor = System.Drawing.Color.Transparent;
+            this.Info_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Info_button.ForeColor = System.Drawing.Color.Gray;
+            this.Info_button.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Info_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Info_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Info_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.Info_button.Location = new System.Drawing.Point(659, 21);
+            this.Info_button.Name = "Info_button";
+            this.Info_button.Size = new System.Drawing.Size(80, 30);
+            this.Info_button.TabIndex = 1;
+            this.Info_button.Text = "Info";
+            // 
+            // Main
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1180, 691);
+            this.ClientSize = new System.Drawing.Size(885, 561);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.guna2Panel1);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "Main";
             this.Text = "Form1";
+            this.guna2Panel1.ResumeLayout(false);
             this.guna2ShadowPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -91,6 +212,11 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Button GioHang_button;
+        private Guna.UI2.WinForms.Guna2Button Home_button;
+        private Guna.UI2.WinForms.Guna2Button Info_button;
+        private Guna.UI2.WinForms.Guna2Button Bike_button;
+        private Guna.UI2.WinForms.Guna2Button Tour_button;
     }
 }
 
