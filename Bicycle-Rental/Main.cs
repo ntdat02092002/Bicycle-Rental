@@ -42,6 +42,11 @@ namespace Bicycle_Rental
             {
                 panel_bike.Visible = false;
             }
+
+            if (!MouseIsOverControl(Bicycle_tour_panel) && !MouseIsOverControl(Bike_For_Tour))
+            {
+                Bicycle_tour_panel.Visible = false;
+            }
         }
 
         private void bike_for_tour_btn_MouseHover(object sender, EventArgs e)
