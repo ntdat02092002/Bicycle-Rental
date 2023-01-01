@@ -163,5 +163,11 @@ namespace Bicycle_Rental
         {
             Home_button.PerformClick();
         }
+
+        private void Lever_Of_Diffculty_Click(object sender, EventArgs e)
+        {
+            LevelDiffculty sub_form = new LevelDiffculty(this);
+            this.Open_Sub_Form(sub_form);
+        }
     }
 }

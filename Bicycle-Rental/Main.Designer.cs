@@ -848,6 +848,7 @@
             this.Lever_Of_Diffculty.TabIndex = 8;
             this.Lever_Of_Diffculty.Text = "Level Of Difficulty";
             this.Lever_Of_Diffculty.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Lever_Of_Diffculty.Click += new System.EventHandler(this.Lever_Of_Diffculty_Click);
             this.Lever_Of_Diffculty.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
             // 
             // Tour_Inquiry
