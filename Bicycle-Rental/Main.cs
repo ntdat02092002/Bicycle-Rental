@@ -69,8 +69,12 @@ namespace Bicycle_Rental
         {
             if (!MouseIsOverControl(Bicycle_tour_panel) && !MouseIsOverControl(Bike_For_Tour))
             {
-                panel_bike.Visible = false;
                 Bicycle_tour_panel.Visible = false;
+            }
+
+            if (!MouseIsOverControl(panel_bike) && !MouseIsOverControl(Bicycle_tour_panel))
+            {
+                panel_bike.Visible = false;
             }
         }
 
