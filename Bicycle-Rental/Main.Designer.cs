@@ -62,6 +62,7 @@
             this.FAQ = new Guna.UI2.WinForms.Guna2Button();
             this.Lever_Of_Diffculty = new Guna.UI2.WinForms.Guna2Button();
             this.Tour_Inquiry = new Guna.UI2.WinForms.Guna2Button();
+            this.Sub_Form_panel = new System.Windows.Forms.Panel();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -406,9 +407,11 @@
             this.Home_button.Size = new System.Drawing.Size(80, 30);
             this.Home_button.TabIndex = 1;
             this.Home_button.Text = "Home";
+            this.Home_button.Click += new System.EventHandler(this.Home_button_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -417,6 +420,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel_bike
             // 
@@ -868,14 +872,24 @@
             this.Tour_Inquiry.TabIndex = 7;
             this.Tour_Inquiry.Text = "Tour Inquiry";
             this.Tour_Inquiry.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Tour_Inquiry.Click += new System.EventHandler(this.Tour_Inquiry_Click);
             this.Tour_Inquiry.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
+            // 
+            // Sub_Form_panel
+            // 
+            this.Sub_Form_panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Sub_Form_panel.Location = new System.Drawing.Point(0, 105);
+            this.Sub_Form_panel.Name = "Sub_Form_panel";
+            this.Sub_Form_panel.Size = new System.Drawing.Size(1184, 511);
+            this.Sub_Form_panel.TabIndex = 5;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.ClientSize = new System.Drawing.Size(1184, 616);
+            this.Controls.Add(this.Sub_Form_panel);
             this.Controls.Add(this.Bicycle_tour_panel);
             this.Controls.Add(this.Contact_panel);
             this.Controls.Add(this.panel_bike);
@@ -930,6 +944,7 @@
         private Guna.UI2.WinForms.Guna2Button FAQ;
         private Guna.UI2.WinForms.Guna2Button Lever_Of_Diffculty;
         private Guna.UI2.WinForms.Guna2Button Tour_Inquiry;
+        private System.Windows.Forms.Panel Sub_Form_panel;
     }
 }
 

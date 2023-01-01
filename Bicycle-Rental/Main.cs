@@ -13,6 +13,7 @@ namespace Bicycle_Rental
 {
     public partial class Main : Form
     {
+        Form sub_form = null;
         public Main()
         {
             InitializeComponent();
@@ -75,7 +76,8 @@ namespace Bicycle_Rental
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+            Home home = new Home();
+            this.Open_Sub_Form(home);
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -126,5 +128,36 @@ namespace Bicycle_Rental
             }
         }
 
+        public void Open_Sub_Form(Form sub)
+        {
+            sub.TopLevel = false;
+            sub.Dock = DockStyle.Fill;//Set the subform as a control
+
+            sub.FormBorderStyle = FormBorderStyle.None;
+            Sub_Form_panel.Controls.Add(sub);
+            sub.Show();
+
+            if (sub_form != null)
+                sub_form.Close();
+
+            sub_form = sub;
+        }
+
+        private void Home_button_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            this.Open_Sub_Form(home);
+        }
+
+        private void Tour_Inquiry_Click(object sender, EventArgs e)
+        {
+            TourInquiry sub_form = new TourInquiry();
+            this.Open_Sub_Form(sub_form);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Home_button.PerformClick();
+        }
     }
 }
