@@ -169,5 +169,22 @@ namespace Bicycle_Rental
             LevelDiffculty sub_form = new LevelDiffculty(this);
             this.Open_Sub_Form(sub_form);
         }
+
+        private void Make_A_Payment_Click(object sender, EventArgs e)
+        {
+            MakePayment sub_form = new MakePayment(this);
+            this.Open_Sub_Form(sub_form);
+        }
+
+        private void How_To_Book_Click(object sender, EventArgs e)
+        {
+            HowToBook sub_form = new HowToBook(this);
+            this.Open_Sub_Form(sub_form);
+        }
+
+        private void Join_A_Group_Tour_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/groups/552639710088460");
+        }
     }
 }

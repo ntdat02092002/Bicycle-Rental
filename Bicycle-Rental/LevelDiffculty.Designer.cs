@@ -206,9 +206,9 @@
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.guna2Button1);
-            this.guna2Panel1.Location = new System.Drawing.Point(454, 2670);
+            this.guna2Panel1.Location = new System.Drawing.Point(453, 2675);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(249, 88);
+            this.guna2Panel1.Size = new System.Drawing.Size(249, 92);
             this.guna2Panel1.TabIndex = 19;
             // 
             // easy_linklabel
@@ -234,7 +234,7 @@
             this.moderate_linklable.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.moderate_linklable.Location = new System.Drawing.Point(151, 2027);
             this.moderate_linklable.Name = "moderate_linklable";
-            this.moderate_linklable.Size = new System.Drawing.Size(883, 23);
+            this.moderate_linklable.Size = new System.Drawing.Size(883, 28);
             this.moderate_linklable.TabIndex = 21;
             this.moderate_linklable.TabStop = true;
             this.moderate_linklable.Text = "Click here to see all moderate bike rides in Vietnam.";
@@ -249,7 +249,7 @@
             this.challenge_linklable.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.challenge_linklable.Location = new System.Drawing.Point(147, 2640);
             this.challenge_linklable.Name = "challenge_linklable";
-            this.challenge_linklable.Size = new System.Drawing.Size(883, 23);
+            this.challenge_linklable.Size = new System.Drawing.Size(883, 32);
             this.challenge_linklable.TabIndex = 22;
             this.challenge_linklable.TabStop = true;
             this.challenge_linklable.Text = "Click here to see all challenging, hard, tough bike tours in Vietnam.";

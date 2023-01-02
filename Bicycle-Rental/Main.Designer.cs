@@ -752,6 +752,7 @@
             this.Join_A_Group_Tour.TabIndex = 12;
             this.Join_A_Group_Tour.Text = "Join A Group Tour";
             this.Join_A_Group_Tour.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Join_A_Group_Tour.Click += new System.EventHandler(this.Join_A_Group_Tour_Click);
             this.Join_A_Group_Tour.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
             // 
             // Make_A_Payment
@@ -776,6 +777,7 @@
             this.Make_A_Payment.TabIndex = 11;
             this.Make_A_Payment.Text = "Make A Payment";
             this.Make_A_Payment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Make_A_Payment.Click += new System.EventHandler(this.Make_A_Payment_Click);
             this.Make_A_Payment.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
             // 
             // How_To_Book
@@ -800,6 +802,7 @@
             this.How_To_Book.TabIndex = 10;
             this.How_To_Book.Text = "How To Book";
             this.How_To_Book.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.How_To_Book.Click += new System.EventHandler(this.How_To_Book_Click);
             this.How_To_Book.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
             // 
             // FAQ
@@ -898,6 +901,8 @@
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(1200, 655);
+            this.MinimumSize = new System.Drawing.Size(1200, 655);
             this.Name = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.guna2Panel1.ResumeLayout(false);
