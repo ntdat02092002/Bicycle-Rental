@@ -138,11 +138,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TourInquiry.cs">
+    <Compile Include="Inquiry.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TourInquiry.Designer.cs">
-      <DependentUpon>TourInquiry.cs</DependentUpon>
+    <Compile Include="Inquiry.Designer.cs">
+      <DependentUpon>Inquiry.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -168,8 +168,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TourInquiry.resx">
-      <DependentUpon>TourInquiry.cs</DependentUpon>
+    <EmbeddedResource Include="Inquiry.resx">
+      <DependentUpon>Inquiry.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -18,5 +18,12 @@ namespace Bicycle_Rental
             InitializeComponent();
             this.main = main;
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string url = @"https://docs.google.com/forms/d/e/1FAIpQLSegIolcUf7AeE__2JNBOy-dCQcqNsj1rK-1SWubqlRrNNhutw/viewform";
+            Inquiry sub_form = new Inquiry(url);
+            main.Open_Sub_Form(sub_form);
+        }
     }
 }

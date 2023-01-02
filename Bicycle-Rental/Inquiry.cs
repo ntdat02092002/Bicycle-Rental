@@ -12,16 +12,16 @@ using CefSharp.WinForms;
 
 namespace Bicycle_Rental
 {
-    public partial class TourInquiry : Form
+    public partial class Inquiry : Form
     {
-        public TourInquiry()
+        public Inquiry(string url)
         {
             InitializeComponent();
-            InitBrowser();
+            InitBrowser(url);
         }
 
         public ChromiumWebBrowser browser;
-        public void InitBrowser()
+        public void InitBrowser(string url)
         {
             if (!Cef.IsInitialized) // Check before init
             {
@@ -29,7 +29,7 @@ namespace Bicycle_Rental
                 Cef.Initialize(settings);
             }
 
-            browser = new ChromiumWebBrowser(@"https://docs.google.com/forms/d/e/1FAIpQLSdISkkN9lU5WOp56QfWevt2DatyXhty4qtOBTtM0-X04gpc1w/viewform");
+            browser = new ChromiumWebBrowser(url);
             this.Controls.Add(browser);
             browser.Dock = DockStyle.Fill;
         }
