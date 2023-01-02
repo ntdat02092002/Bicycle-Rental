@@ -56,13 +56,15 @@
             this.Road_Bikes = new Guna.UI2.WinForms.Guna2Button();
             this.Hybrid_Bicycles = new Guna.UI2.WinForms.Guna2Button();
             this.Contact_panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.Join_A_Group_Tour = new Guna.UI2.WinForms.Guna2Button();
-            this.Make_A_Payment = new Guna.UI2.WinForms.Guna2Button();
-            this.How_To_Book = new Guna.UI2.WinForms.Guna2Button();
-            this.FAQ = new Guna.UI2.WinForms.Guna2Button();
-            this.Lever_Of_Diffculty = new Guna.UI2.WinForms.Guna2Button();
             this.Tour_Inquiry = new Guna.UI2.WinForms.Guna2Button();
             this.Sub_Form_panel = new System.Windows.Forms.Panel();
+            this.General_Inquiry = new Guna.UI2.WinForms.Guna2Button();
+            this.Bike_Rental_inquiry = new Guna.UI2.WinForms.Guna2Button();
+            this.Lever_Of_Diffculty = new Guna.UI2.WinForms.Guna2Button();
+            this.FAQ = new Guna.UI2.WinForms.Guna2Button();
+            this.How_To_Book = new Guna.UI2.WinForms.Guna2Button();
+            this.Make_A_Payment = new Guna.UI2.WinForms.Guna2Button();
+            this.Join_A_Group_Tour = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -717,6 +719,8 @@
             this.Contact_panel.Controls.Add(this.How_To_Book);
             this.Contact_panel.Controls.Add(this.FAQ);
             this.Contact_panel.Controls.Add(this.Lever_Of_Diffculty);
+            this.Contact_panel.Controls.Add(this.Bike_Rental_inquiry);
+            this.Contact_panel.Controls.Add(this.General_Inquiry);
             this.Contact_panel.Controls.Add(this.Tour_Inquiry);
             this.Contact_panel.FillColor = System.Drawing.Color.White;
             this.Contact_panel.Location = new System.Drawing.Point(645, 78);
@@ -725,134 +729,10 @@
             this.Contact_panel.ShadowColor = System.Drawing.Color.Black;
             this.Contact_panel.ShadowShift = 3;
             this.Contact_panel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.G360400081A33240D0117.G2303131B14360D260C130E240B0C19;
-            this.Contact_panel.Size = new System.Drawing.Size(166, 186);
+            this.Contact_panel.Size = new System.Drawing.Size(169, 253);
             this.Contact_panel.TabIndex = 4;
             this.Contact_panel.Visible = false;
             this.Contact_panel.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
-            // 
-            // Join_A_Group_Tour
-            // 
-            this.Join_A_Group_Tour.BackColor = System.Drawing.Color.Transparent;
-            this.Join_A_Group_Tour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Join_A_Group_Tour.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Join_A_Group_Tour.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Join_A_Group_Tour.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Join_A_Group_Tour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Join_A_Group_Tour.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Join_A_Group_Tour.FillColor = System.Drawing.Color.Transparent;
-            this.Join_A_Group_Tour.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Join_A_Group_Tour.ForeColor = System.Drawing.Color.Black;
-            this.Join_A_Group_Tour.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Join_A_Group_Tour.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Join_A_Group_Tour.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Join_A_Group_Tour.ImageSize = new System.Drawing.Size(30, 30);
-            this.Join_A_Group_Tour.Location = new System.Drawing.Point(0, 150);
-            this.Join_A_Group_Tour.Name = "Join_A_Group_Tour";
-            this.Join_A_Group_Tour.Size = new System.Drawing.Size(166, 30);
-            this.Join_A_Group_Tour.TabIndex = 12;
-            this.Join_A_Group_Tour.Text = "Join A Group Tour";
-            this.Join_A_Group_Tour.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Join_A_Group_Tour.Click += new System.EventHandler(this.Join_A_Group_Tour_Click);
-            this.Join_A_Group_Tour.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
-            // 
-            // Make_A_Payment
-            // 
-            this.Make_A_Payment.BackColor = System.Drawing.Color.Transparent;
-            this.Make_A_Payment.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Make_A_Payment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Make_A_Payment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Make_A_Payment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Make_A_Payment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Make_A_Payment.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Make_A_Payment.FillColor = System.Drawing.Color.Transparent;
-            this.Make_A_Payment.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Make_A_Payment.ForeColor = System.Drawing.Color.Black;
-            this.Make_A_Payment.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Make_A_Payment.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Make_A_Payment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Make_A_Payment.ImageSize = new System.Drawing.Size(30, 30);
-            this.Make_A_Payment.Location = new System.Drawing.Point(0, 120);
-            this.Make_A_Payment.Name = "Make_A_Payment";
-            this.Make_A_Payment.Size = new System.Drawing.Size(166, 30);
-            this.Make_A_Payment.TabIndex = 11;
-            this.Make_A_Payment.Text = "Make A Payment";
-            this.Make_A_Payment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Make_A_Payment.Click += new System.EventHandler(this.Make_A_Payment_Click);
-            this.Make_A_Payment.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
-            // 
-            // How_To_Book
-            // 
-            this.How_To_Book.BackColor = System.Drawing.Color.Transparent;
-            this.How_To_Book.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.How_To_Book.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.How_To_Book.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.How_To_Book.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.How_To_Book.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.How_To_Book.Dock = System.Windows.Forms.DockStyle.Top;
-            this.How_To_Book.FillColor = System.Drawing.Color.Transparent;
-            this.How_To_Book.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.How_To_Book.ForeColor = System.Drawing.Color.Black;
-            this.How_To_Book.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.How_To_Book.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.How_To_Book.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.How_To_Book.ImageSize = new System.Drawing.Size(30, 30);
-            this.How_To_Book.Location = new System.Drawing.Point(0, 90);
-            this.How_To_Book.Name = "How_To_Book";
-            this.How_To_Book.Size = new System.Drawing.Size(166, 30);
-            this.How_To_Book.TabIndex = 10;
-            this.How_To_Book.Text = "How To Book";
-            this.How_To_Book.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.How_To_Book.Click += new System.EventHandler(this.How_To_Book_Click);
-            this.How_To_Book.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
-            // 
-            // FAQ
-            // 
-            this.FAQ.BackColor = System.Drawing.Color.Transparent;
-            this.FAQ.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FAQ.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.FAQ.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.FAQ.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.FAQ.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.FAQ.Dock = System.Windows.Forms.DockStyle.Top;
-            this.FAQ.FillColor = System.Drawing.Color.Transparent;
-            this.FAQ.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FAQ.ForeColor = System.Drawing.Color.Black;
-            this.FAQ.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.FAQ.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.FAQ.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.FAQ.ImageSize = new System.Drawing.Size(30, 30);
-            this.FAQ.Location = new System.Drawing.Point(0, 60);
-            this.FAQ.Name = "FAQ";
-            this.FAQ.Size = new System.Drawing.Size(166, 30);
-            this.FAQ.TabIndex = 9;
-            this.FAQ.Text = "FAQ";
-            this.FAQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.FAQ.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
-            // 
-            // Lever_Of_Diffculty
-            // 
-            this.Lever_Of_Diffculty.BackColor = System.Drawing.Color.Transparent;
-            this.Lever_Of_Diffculty.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Lever_Of_Diffculty.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Lever_Of_Diffculty.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Lever_Of_Diffculty.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Lever_Of_Diffculty.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Lever_Of_Diffculty.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Lever_Of_Diffculty.FillColor = System.Drawing.Color.Transparent;
-            this.Lever_Of_Diffculty.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lever_Of_Diffculty.ForeColor = System.Drawing.Color.Black;
-            this.Lever_Of_Diffculty.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Lever_Of_Diffculty.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Lever_Of_Diffculty.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Lever_Of_Diffculty.ImageSize = new System.Drawing.Size(30, 30);
-            this.Lever_Of_Diffculty.Location = new System.Drawing.Point(0, 30);
-            this.Lever_Of_Diffculty.Name = "Lever_Of_Diffculty";
-            this.Lever_Of_Diffculty.Size = new System.Drawing.Size(166, 30);
-            this.Lever_Of_Diffculty.TabIndex = 8;
-            this.Lever_Of_Diffculty.Text = "Level Of Difficulty";
-            this.Lever_Of_Diffculty.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Lever_Of_Diffculty.Click += new System.EventHandler(this.Lever_Of_Diffculty_Click);
-            this.Lever_Of_Diffculty.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
             // 
             // Tour_Inquiry
             // 
@@ -872,7 +752,7 @@
             this.Tour_Inquiry.ImageSize = new System.Drawing.Size(15, 15);
             this.Tour_Inquiry.Location = new System.Drawing.Point(0, 0);
             this.Tour_Inquiry.Name = "Tour_Inquiry";
-            this.Tour_Inquiry.Size = new System.Drawing.Size(166, 30);
+            this.Tour_Inquiry.Size = new System.Drawing.Size(169, 30);
             this.Tour_Inquiry.TabIndex = 7;
             this.Tour_Inquiry.Text = "Tour Inquiry";
             this.Tour_Inquiry.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -887,15 +767,189 @@
             this.Sub_Form_panel.Size = new System.Drawing.Size(1184, 511);
             this.Sub_Form_panel.TabIndex = 5;
             // 
+            // General_Inquiry
+            // 
+            this.General_Inquiry.BackColor = System.Drawing.Color.Transparent;
+            this.General_Inquiry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.General_Inquiry.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.General_Inquiry.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.General_Inquiry.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.General_Inquiry.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.General_Inquiry.Dock = System.Windows.Forms.DockStyle.Top;
+            this.General_Inquiry.FillColor = System.Drawing.Color.Transparent;
+            this.General_Inquiry.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.General_Inquiry.ForeColor = System.Drawing.Color.Black;
+            this.General_Inquiry.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.General_Inquiry.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.General_Inquiry.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.General_Inquiry.ImageSize = new System.Drawing.Size(15, 15);
+            this.General_Inquiry.Location = new System.Drawing.Point(0, 30);
+            this.General_Inquiry.Name = "General_Inquiry";
+            this.General_Inquiry.Size = new System.Drawing.Size(169, 30);
+            this.General_Inquiry.TabIndex = 13;
+            this.General_Inquiry.Text = "General Inquiry";
+            this.General_Inquiry.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.General_Inquiry.Click += new System.EventHandler(this.General_Inquiry_Click);
+            this.General_Inquiry.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
+            // 
+            // Bike_Rental_inquiry
+            // 
+            this.Bike_Rental_inquiry.BackColor = System.Drawing.Color.Transparent;
+            this.Bike_Rental_inquiry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bike_Rental_inquiry.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Bike_Rental_inquiry.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Bike_Rental_inquiry.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Bike_Rental_inquiry.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Bike_Rental_inquiry.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Bike_Rental_inquiry.FillColor = System.Drawing.Color.Transparent;
+            this.Bike_Rental_inquiry.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bike_Rental_inquiry.ForeColor = System.Drawing.Color.Black;
+            this.Bike_Rental_inquiry.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Bike_Rental_inquiry.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Bike_Rental_inquiry.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Bike_Rental_inquiry.ImageSize = new System.Drawing.Size(15, 15);
+            this.Bike_Rental_inquiry.Location = new System.Drawing.Point(0, 60);
+            this.Bike_Rental_inquiry.Name = "Bike_Rental_inquiry";
+            this.Bike_Rental_inquiry.Size = new System.Drawing.Size(169, 36);
+            this.Bike_Rental_inquiry.TabIndex = 14;
+            this.Bike_Rental_inquiry.Text = "Bike Rental Inquiry";
+            this.Bike_Rental_inquiry.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Bike_Rental_inquiry.Click += new System.EventHandler(this.Bike_Rental_inquiry_Click);
+            this.Bike_Rental_inquiry.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
+            // 
+            // Lever_Of_Diffculty
+            // 
+            this.Lever_Of_Diffculty.BackColor = System.Drawing.Color.Transparent;
+            this.Lever_Of_Diffculty.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Lever_Of_Diffculty.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Lever_Of_Diffculty.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Lever_Of_Diffculty.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Lever_Of_Diffculty.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Lever_Of_Diffculty.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Lever_Of_Diffculty.FillColor = System.Drawing.Color.Transparent;
+            this.Lever_Of_Diffculty.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lever_Of_Diffculty.ForeColor = System.Drawing.Color.Black;
+            this.Lever_Of_Diffculty.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Lever_Of_Diffculty.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Lever_Of_Diffculty.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Lever_Of_Diffculty.ImageSize = new System.Drawing.Size(30, 30);
+            this.Lever_Of_Diffculty.Location = new System.Drawing.Point(0, 96);
+            this.Lever_Of_Diffculty.Name = "Lever_Of_Diffculty";
+            this.Lever_Of_Diffculty.Size = new System.Drawing.Size(169, 30);
+            this.Lever_Of_Diffculty.TabIndex = 15;
+            this.Lever_Of_Diffculty.Text = "Level Of Difficulty";
+            this.Lever_Of_Diffculty.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Lever_Of_Diffculty.Click += new System.EventHandler(this.Lever_Of_Diffculty_Click);
+            this.Lever_Of_Diffculty.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
+            // 
+            // FAQ
+            // 
+            this.FAQ.BackColor = System.Drawing.Color.Transparent;
+            this.FAQ.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FAQ.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.FAQ.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.FAQ.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.FAQ.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.FAQ.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FAQ.FillColor = System.Drawing.Color.Transparent;
+            this.FAQ.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FAQ.ForeColor = System.Drawing.Color.Black;
+            this.FAQ.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.FAQ.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.FAQ.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.FAQ.ImageSize = new System.Drawing.Size(30, 30);
+            this.FAQ.Location = new System.Drawing.Point(0, 126);
+            this.FAQ.Name = "FAQ";
+            this.FAQ.Size = new System.Drawing.Size(169, 30);
+            this.FAQ.TabIndex = 16;
+            this.FAQ.Text = "FAQ";
+            this.FAQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.FAQ.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
+            // 
+            // How_To_Book
+            // 
+            this.How_To_Book.BackColor = System.Drawing.Color.Transparent;
+            this.How_To_Book.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.How_To_Book.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.How_To_Book.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.How_To_Book.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.How_To_Book.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.How_To_Book.Dock = System.Windows.Forms.DockStyle.Top;
+            this.How_To_Book.FillColor = System.Drawing.Color.Transparent;
+            this.How_To_Book.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.How_To_Book.ForeColor = System.Drawing.Color.Black;
+            this.How_To_Book.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.How_To_Book.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.How_To_Book.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.How_To_Book.ImageSize = new System.Drawing.Size(30, 30);
+            this.How_To_Book.Location = new System.Drawing.Point(0, 156);
+            this.How_To_Book.Name = "How_To_Book";
+            this.How_To_Book.Size = new System.Drawing.Size(169, 30);
+            this.How_To_Book.TabIndex = 17;
+            this.How_To_Book.Text = "How To Book";
+            this.How_To_Book.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.How_To_Book.Click += new System.EventHandler(this.How_To_Book_Click);
+            this.How_To_Book.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
+            // 
+            // Make_A_Payment
+            // 
+            this.Make_A_Payment.BackColor = System.Drawing.Color.Transparent;
+            this.Make_A_Payment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Make_A_Payment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Make_A_Payment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Make_A_Payment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Make_A_Payment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Make_A_Payment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Make_A_Payment.FillColor = System.Drawing.Color.Transparent;
+            this.Make_A_Payment.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Make_A_Payment.ForeColor = System.Drawing.Color.Black;
+            this.Make_A_Payment.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Make_A_Payment.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Make_A_Payment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Make_A_Payment.ImageSize = new System.Drawing.Size(30, 30);
+            this.Make_A_Payment.Location = new System.Drawing.Point(0, 186);
+            this.Make_A_Payment.Name = "Make_A_Payment";
+            this.Make_A_Payment.Size = new System.Drawing.Size(169, 30);
+            this.Make_A_Payment.TabIndex = 18;
+            this.Make_A_Payment.Text = "Make A Payment";
+            this.Make_A_Payment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Make_A_Payment.Click += new System.EventHandler(this.Make_A_Payment_Click);
+            this.Make_A_Payment.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
+            // 
+            // Join_A_Group_Tour
+            // 
+            this.Join_A_Group_Tour.BackColor = System.Drawing.Color.Transparent;
+            this.Join_A_Group_Tour.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Join_A_Group_Tour.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Join_A_Group_Tour.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Join_A_Group_Tour.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Join_A_Group_Tour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Join_A_Group_Tour.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Join_A_Group_Tour.FillColor = System.Drawing.Color.Transparent;
+            this.Join_A_Group_Tour.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Join_A_Group_Tour.ForeColor = System.Drawing.Color.Black;
+            this.Join_A_Group_Tour.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Join_A_Group_Tour.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Join_A_Group_Tour.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Join_A_Group_Tour.ImageSize = new System.Drawing.Size(30, 30);
+            this.Join_A_Group_Tour.Location = new System.Drawing.Point(0, 216);
+            this.Join_A_Group_Tour.Name = "Join_A_Group_Tour";
+            this.Join_A_Group_Tour.Size = new System.Drawing.Size(169, 30);
+            this.Join_A_Group_Tour.TabIndex = 19;
+            this.Join_A_Group_Tour.Text = "Join A Group Tour";
+            this.Join_A_Group_Tour.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Join_A_Group_Tour.Click += new System.EventHandler(this.Join_A_Group_Tour_Click);
+            this.Join_A_Group_Tour.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 616);
+            this.Controls.Add(this.Contact_panel);
             this.Controls.Add(this.Sub_Form_panel);
             this.Controls.Add(this.Bicycle_tour_panel);
-            this.Controls.Add(this.Contact_panel);
             this.Controls.Add(this.panel_bike);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.guna2Panel1);
@@ -944,13 +998,15 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2ShadowPanel Contact_panel;
+        private Guna.UI2.WinForms.Guna2Button Tour_Inquiry;
+        private System.Windows.Forms.Panel Sub_Form_panel;
         private Guna.UI2.WinForms.Guna2Button Join_A_Group_Tour;
         private Guna.UI2.WinForms.Guna2Button Make_A_Payment;
         private Guna.UI2.WinForms.Guna2Button How_To_Book;
         private Guna.UI2.WinForms.Guna2Button FAQ;
         private Guna.UI2.WinForms.Guna2Button Lever_Of_Diffculty;
-        private Guna.UI2.WinForms.Guna2Button Tour_Inquiry;
-        private System.Windows.Forms.Panel Sub_Form_panel;
+        private Guna.UI2.WinForms.Guna2Button Bike_Rental_inquiry;
+        private Guna.UI2.WinForms.Guna2Button General_Inquiry;
     }
 }
 

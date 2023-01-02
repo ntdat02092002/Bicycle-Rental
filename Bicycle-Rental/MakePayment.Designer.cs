@@ -53,7 +53,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(153, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 40);
+            this.label1.Size = new System.Drawing.Size(460, 62);
             this.label1.TabIndex = 5;
             this.label1.Text = "Make a payment";
             // 
@@ -199,6 +199,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(174, 45);
             this.guna2Button1.TabIndex = 18;
             this.guna2Button1.Text = "Contact us";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Panel1
             // 

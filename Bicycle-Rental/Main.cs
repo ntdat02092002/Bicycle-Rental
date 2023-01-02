@@ -155,7 +155,8 @@ namespace Bicycle_Rental
 
         private void Tour_Inquiry_Click(object sender, EventArgs e)
         {
-            TourInquiry sub_form = new TourInquiry();
+            string url = @"https://docs.google.com/forms/d/e/1FAIpQLSdISkkN9lU5WOp56QfWevt2DatyXhty4qtOBTtM0-X04gpc1w/viewform";
+            Inquiry sub_form = new Inquiry(url);
             this.Open_Sub_Form(sub_form);
         }
 
@@ -185,6 +186,20 @@ namespace Bicycle_Rental
         private void Join_A_Group_Tour_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.facebook.com/groups/552639710088460");
+        }
+
+        private void General_Inquiry_Click(object sender, EventArgs e)
+        {
+            string url = @"https://docs.google.com/forms/d/e/1FAIpQLSegIolcUf7AeE__2JNBOy-dCQcqNsj1rK-1SWubqlRrNNhutw/viewform";
+            Inquiry sub_form = new Inquiry(url);
+            this.Open_Sub_Form(sub_form);
+        }
+
+        private void Bike_Rental_inquiry_Click(object sender, EventArgs e)
+        {
+            string url = @"https://docs.google.com/forms/d/e/1FAIpQLSdjcaegNYKGkiXT8MiqGcj084VwlCLJDX-syHzLfbsXY7A3iw/viewform";
+            Inquiry sub_form = new Inquiry(url);
+            this.Open_Sub_Form(sub_form);
         }
     }
 }

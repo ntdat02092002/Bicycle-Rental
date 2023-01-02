@@ -21,7 +21,8 @@ namespace Bicycle_Rental
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            TourInquiry sub_form = new TourInquiry();
+            string url = @"https://docs.google.com/forms/d/e/1FAIpQLSdISkkN9lU5WOp56QfWevt2DatyXhty4qtOBTtM0-X04gpc1w/viewform";
+            Inquiry sub_form = new Inquiry(url);
             main.Open_Sub_Form(sub_form);
         }
 

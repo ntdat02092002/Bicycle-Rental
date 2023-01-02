@@ -1,6 +1,6 @@
 ﻿namespace Bicycle_Rental
 {
-    partial class TourInquiry
+    partial class Inquiry
     {
         /// <summary>
         /// Required designer variable.
