@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Bicycle_Rental
@@ -17,16 +18,16 @@ namespace Bicycle_Rental
 
         public static void KhoiTao()
         {
-            asset_path = @"..\..\asset\";
+            asset_path = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\asset\";
 
             string[] cols_bicycle = { "maxe", "tenxe", "loai", "giathue", "madiadiem", "desciption", "dathue", "mausac", "kichthuoc", "tocdo" };
             Bicycle = ExcelToDataTable(asset_path + "bicycle.xlsx", cols_bicycle);
 
-            string[] cols_user = { "madiadiem", "ten latitude", "longitude" };
+            string[] cols_user = { "tendangnhap", "matkhau", "ten", "avatar", "gioitinh", "ngay", "thang", "nam", "email", "sdt", "admin" };
             User = ExcelToDataTable(asset_path + "user.xlsx", cols_user);
 
-            string[] cols_destination = { "tendangnhap", "matkhau", "ten avatar", "gioitinh", "ngay", "thang", "nam", "email", "sdt" };
-            Destination = ExcelToDataTable(asset_path + "diadiem.xlsx.xlsx", cols_destination);
+            string[] cols_destination = { "madiadiem", "ten", "latitude", "longitude" };
+            Destination = ExcelToDataTable(asset_path + "diadiem.xlsx", cols_destination);
         }
 
         static DataTable ExcelToDataTable(string path, string[] cols)
