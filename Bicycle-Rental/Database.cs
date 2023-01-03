@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Bicycle_Rental
 {
-    class Database
+    internal class Database
     {
+        public static Database Bicycle { get; set; }
+        public static Database User { get; set; }
+
+        public static void KhoiTao()
+        {
+            Bicycle = new Database();
+            User = new Database();
+        }
     }
 }
