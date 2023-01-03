@@ -14,10 +14,13 @@ namespace Bicycle_Rental
     public partial class Main : Form
     {
         Form sub_form = null;
+        public bool is_login = false;
+        public bool is_admin = false;
+        public string user_name;
         public Main()
         {
             InitializeComponent();
-
+            Database.KhoiTao();
         }
 
         private bool MouseIsOverControl(Control control) =>
@@ -200,6 +203,83 @@ namespace Bicycle_Rental
             string url = @"https://docs.google.com/forms/d/e/1FAIpQLSdjcaegNYKGkiXT8MiqGcj084VwlCLJDX-syHzLfbsXY7A3iw/viewform";
             Inquiry sub_form = new Inquiry(url);
             this.Open_Sub_Form(sub_form);
+        }
+
+        private void Login_Click(object sender, EventArgs e)
+        {
+            if (!is_login)
+            {
+                Login sub = new Login(this);
+                this.Open_Sub_Form(sub);
+                return;
+            }
+            if (is_admin)
+            {
+                Admin_panel.BringToFront();
+                Admin_panel.Visible = true;
+            }
+            else
+            {
+                User_panel.BringToFront();
+                User_panel.Visible = true;
+            }
+            
+        }
+
+        private void User_panel_MouseLeave(object sender, EventArgs e)
+        {
+            if (is_admin)
+            {
+                if (!MouseIsOverControl(Admin_panel) && !MouseIsOverControl(Login))
+                {
+                    Admin_panel.Visible = false;
+                }
+            }
+            else
+            {
+                if (!MouseIsOverControl(User_panel) && !MouseIsOverControl(Login))
+                {
+                    User_panel.Visible = false;
+                }
+            }
+            
+        }
+
+        private void Login_MouseLeave(object sender, EventArgs e)
+        {
+            if (is_login)
+            {
+                if (is_admin)
+                {
+                    if (!MouseIsOverControl(Admin_panel) && !MouseIsOverControl(Login))
+                    {
+                        Admin_panel.Visible = false;
+                    }
+                }
+                else
+                {
+                    if (!MouseIsOverControl(User_panel) && !MouseIsOverControl(Login))
+                    {
+                        User_panel.Visible = false;
+                    }
+                }
+            }
+        }
+
+        public void set_name_in_login_btn(string name)
+        {
+            this.Login.Text = name;
+        }
+
+        private void Logout_Button_Click(object sender, EventArgs e)
+        {
+            this.is_admin = false;
+            this.is_login = false;
+            this.user_name = "";
+            this.Login.Text = "Login";
+            Admin_panel.Visible = false;
+            User_panel.Visible = false;
+            this.Home_button.PerformClick();
         }
     }
 }

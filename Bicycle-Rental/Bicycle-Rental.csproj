@@ -124,6 +124,12 @@
     <Compile Include="LevelDiffculty.Designer.cs">
       <DependentUpon>LevelDiffculty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,18 @@
     <Compile Include="Inquiry.Designer.cs">
       <DependentUpon>Inquiry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TermsAndConditions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermsAndConditions.Designer.cs">
+      <DependentUpon>TermsAndConditions.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LevelDiffculty.resx">
       <DependentUpon>LevelDiffculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -170,6 +191,12 @@
     </Compile>
     <EmbeddedResource Include="Inquiry.resx">
       <DependentUpon>Inquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TermsAndConditions.resx">
+      <DependentUpon>TermsAndConditions.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
