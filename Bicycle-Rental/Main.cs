@@ -281,5 +281,11 @@ namespace Bicycle_Rental
             User_panel.Visible = false;
             this.Home_button.PerformClick();
         }
+
+        private void Profile_Admin_btn_Click(object sender, EventArgs e)
+        {
+            Profile sub = new Profile(this);
+            this.Open_Sub_Form(sub);
+        }
     }
 }
