@@ -70,10 +70,10 @@
             this.Dashboard_Button = new Guna.UI2.WinForms.Guna2Button();
             this.Profile_Button = new Guna.UI2.WinForms.Guna2Button();
             this.Admin_panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Logout_Admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Dashboard_admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Profile_Admin_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.Logout_Admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1043,6 +1043,7 @@
             this.Profile_Button.TabIndex = 8;
             this.Profile_Button.Text = "Profile";
             this.Profile_Button.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Profile_Button.Click += new System.EventHandler(this.Profile_Admin_btn_Click);
             this.Profile_Button.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);
             // 
             // Admin_panel
@@ -1063,6 +1064,31 @@
             this.Admin_panel.TabIndex = 7;
             this.Admin_panel.Visible = false;
             this.Admin_panel.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);
+            // 
+            // Logout_Admin_btn
+            // 
+            this.Logout_Admin_btn.BackColor = System.Drawing.Color.Transparent;
+            this.Logout_Admin_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Logout_Admin_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Logout_Admin_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Logout_Admin_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Logout_Admin_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Logout_Admin_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logout_Admin_btn.FillColor = System.Drawing.Color.Transparent;
+            this.Logout_Admin_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout_Admin_btn.ForeColor = System.Drawing.Color.Black;
+            this.Logout_Admin_btn.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Logout_Admin_btn.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Logout_Admin_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Logout_Admin_btn.ImageSize = new System.Drawing.Size(30, 30);
+            this.Logout_Admin_btn.Location = new System.Drawing.Point(0, 90);
+            this.Logout_Admin_btn.Name = "Logout_Admin_btn";
+            this.Logout_Admin_btn.Size = new System.Drawing.Size(120, 30);
+            this.Logout_Admin_btn.TabIndex = 11;
+            this.Logout_Admin_btn.Text = "Logout";
+            this.Logout_Admin_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Logout_Admin_btn.Click += new System.EventHandler(this.Logout_Button_Click);
+            this.Logout_Admin_btn.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);
             // 
             // Admin_btn
             // 
@@ -1134,32 +1160,8 @@
             this.Profile_Admin_btn.TabIndex = 8;
             this.Profile_Admin_btn.Text = "Profile";
             this.Profile_Admin_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Profile_Admin_btn.Click += new System.EventHandler(this.Profile_Admin_btn_Click);
             this.Profile_Admin_btn.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);
-            // 
-            // Logout_Admin_btn
-            // 
-            this.Logout_Admin_btn.BackColor = System.Drawing.Color.Transparent;
-            this.Logout_Admin_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Logout_Admin_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Logout_Admin_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Logout_Admin_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Logout_Admin_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Logout_Admin_btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logout_Admin_btn.FillColor = System.Drawing.Color.Transparent;
-            this.Logout_Admin_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logout_Admin_btn.ForeColor = System.Drawing.Color.Black;
-            this.Logout_Admin_btn.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Logout_Admin_btn.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Logout_Admin_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Logout_Admin_btn.ImageSize = new System.Drawing.Size(30, 30);
-            this.Logout_Admin_btn.Location = new System.Drawing.Point(0, 90);
-            this.Logout_Admin_btn.Name = "Logout_Admin_btn";
-            this.Logout_Admin_btn.Size = new System.Drawing.Size(120, 30);
-            this.Logout_Admin_btn.TabIndex = 11;
-            this.Logout_Admin_btn.Text = "Logout";
-            this.Logout_Admin_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Logout_Admin_btn.Click += new System.EventHandler(this.Logout_Button_Click);
-            this.Logout_Admin_btn.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);
             // 
             // Main
             // 
