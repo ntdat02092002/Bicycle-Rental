@@ -1112,6 +1112,7 @@
             this.Admin_btn.TabIndex = 10;
             this.Admin_btn.Text = "Admin";
             this.Admin_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Admin_btn.Click += new System.EventHandler(this.Admin_btn_Click);
             this.Admin_btn.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);
             // 
             // Dashboard_admin_btn

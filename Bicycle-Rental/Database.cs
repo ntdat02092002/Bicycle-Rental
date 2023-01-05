@@ -56,6 +56,9 @@ namespace Bicycle_Rental
             }
             while (((Excel.Range)workSheet.Cells[rowIndex, 1]).Value2 != null);
 
+            workBook.Close(0);
+            app.Quit();
+
             return dt;
         }
     }
