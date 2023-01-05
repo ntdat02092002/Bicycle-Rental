@@ -16,13 +16,25 @@ namespace Bicycle_Rental
     {
         Main main;
         ChromiumWebBrowser browser = null;
+        DataGridView data = new DataGridView();
+        bool is_mail = false;
         public Admin(Main main)
         {
             InitializeComponent();
             this.main = main;
 
-            Open_Login(this.browser);
+            Load_();
+        }
 
+        void Load_()
+        {
+            if (!Cef.IsInitialized) // Check before init
+            {
+                CefSettings settings = new CefSettings();
+                Cef.Initialize(settings);
+            }
+            
+            Open_Login(this.browser);
         }
 
         void Open_Login(ChromiumWebBrowser browser)
@@ -81,12 +93,24 @@ namespace Bicycle_Rental
 
         private void tour_btn_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void user_btn_Click(object sender, EventArgs e)
         {
+            show_panel.Controls.Clear();
 
+            data.DataSource = Database.User;
+            show_panel.Controls.Add(data);
+            data.Dock = DockStyle.Fill;
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            ChromiumWebBrowser browser_mail = new ChromiumWebBrowser(@"https://mail.google.com/mail/u/1/?view=cm&fs=1&tf=1");
+
+            Mail Mail_form = new Mail(browser_mail);
+            Mail_form.Show();
         }
     }
 }
