@@ -287,5 +287,11 @@ namespace Bicycle_Rental
             Profile sub = new Profile(this);
             this.Open_Sub_Form(sub);
         }
+
+        private void Admin_btn_Click(object sender, EventArgs e)
+        {
+            Admin sub = new Admin(this);
+            this.Open_Sub_Form(sub);
+        }
     }
 }
