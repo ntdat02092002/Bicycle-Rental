@@ -308,6 +308,7 @@
             this.guna2Button7.Size = new System.Drawing.Size(88, 30);
             this.guna2Button7.TabIndex = 1;
             this.guna2Button7.Text = "Agency";
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // Contact_button
             // 

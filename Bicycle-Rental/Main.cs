@@ -293,5 +293,11 @@ namespace Bicycle_Rental
             Admin sub = new Admin(this);
             this.Open_Sub_Form(sub);
         }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            Agency sub = new Agency(this);
+            this.Open_Sub_Form(sub);
+        }
     }
 }

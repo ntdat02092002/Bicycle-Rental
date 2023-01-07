@@ -15,6 +15,7 @@ namespace Bicycle_Rental
         public static DataTable Bicycle { get; set; }
         public static DataTable User { get; set; }
         public static DataTable Destination { get; set; }
+        public static DataTable Agency { get; set; }
 
         public static void KhoiTao()
         {
@@ -28,6 +29,9 @@ namespace Bicycle_Rental
 
             string[] cols_destination = { "madiadiem", "ten", "latitude", "longitude" };
             Destination = ExcelToDataTable(asset_path + "diadiem.xlsx", cols_destination);
+
+            string[] cols_agency = { "madaily", "tendaily", "diachi", "tinh", "sdt", "latitude", "longitude" };
+            Agency = ExcelToDataTable(asset_path + "agency.xlsx", cols_agency);
         }
 
         static DataTable ExcelToDataTable(string path, string[] cols)
