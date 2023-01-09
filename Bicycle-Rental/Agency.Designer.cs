@@ -51,7 +51,7 @@
             this.panel.Name = "panel";
             this.panel.ShadowColor = System.Drawing.Color.Black;
             this.panel.ShadowShift = 3;
-            this.panel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.G360400081A33240D0117.G3619131E1A3107060016;
+            this.panel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Surrounded;
             this.panel.Size = new System.Drawing.Size(280, 488);
             this.panel.TabIndex = 0;
             // 
@@ -125,7 +125,7 @@
             this.map_panel.Name = "map_panel";
             this.map_panel.ShadowColor = System.Drawing.Color.Black;
             this.map_panel.ShadowShift = 3;
-            this.map_panel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.G360400081A33240D0117.G3619131E1A3107060016;
+            this.map_panel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Surrounded;
             this.map_panel.Size = new System.Drawing.Size(872, 488);
             this.map_panel.TabIndex = 1;
             // 
