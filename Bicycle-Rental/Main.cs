@@ -99,7 +99,8 @@ namespace Bicycle_Rental
 
         private void bike_for_rent_btn_Click(object sender, EventArgs e)
         {
-
+            Bicycle_For_rent bicycle_For_Rent = new Bicycle_For_rent();
+            Open_Sub_Form(bicycle_For_Rent);
         }
 
         private void bike_for_sale_btn_Click(object sender, EventArgs e)

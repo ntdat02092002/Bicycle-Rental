@@ -44,7 +44,7 @@
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(41, 62);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.G360400081A33240D0117.G3619131E1A3107060016;
+            this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Surrounded;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(445, 360);
             this.guna2ShadowPanel1.TabIndex = 0;
             // 
