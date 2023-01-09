@@ -254,7 +254,6 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowDepth = 40;
             this.guna2ShadowPanel1.ShadowShift = 2;
-            this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Surrounded;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1184, 74);
             this.guna2ShadowPanel1.TabIndex = 1;
             // 
@@ -451,7 +450,6 @@
             this.panel_bike.Name = "panel_bike";
             this.panel_bike.ShadowColor = System.Drawing.Color.Black;
             this.panel_bike.ShadowShift = 3;
-            this.panel_bike.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Surrounded;
             this.panel_bike.Size = new System.Drawing.Size(167, 130);
             this.panel_bike.TabIndex = 3;
             this.panel_bike.Visible = false;
@@ -575,7 +573,6 @@
             this.Bicycle_tour_panel.Name = "Bicycle_tour_panel";
             this.Bicycle_tour_panel.ShadowColor = System.Drawing.Color.Black;
             this.Bicycle_tour_panel.ShadowShift = 3;
-            this.Bicycle_tour_panel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Surrounded;
             this.Bicycle_tour_panel.Size = new System.Drawing.Size(171, 190);
             this.Bicycle_tour_panel.TabIndex = 3;
             this.Bicycle_tour_panel.Visible = false;
@@ -742,7 +739,6 @@
             this.Contact_panel.Name = "Contact_panel";
             this.Contact_panel.ShadowColor = System.Drawing.Color.Black;
             this.Contact_panel.ShadowShift = 3;
-            this.Contact_panel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Surrounded;
             this.Contact_panel.Size = new System.Drawing.Size(169, 253);
             this.Contact_panel.TabIndex = 4;
             this.Contact_panel.Visible = false;
@@ -967,7 +963,6 @@
             this.User_panel.Name = "User_panel";
             this.User_panel.ShadowColor = System.Drawing.Color.Black;
             this.User_panel.ShadowShift = 3;
-            this.User_panel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Surrounded;
             this.User_panel.Size = new System.Drawing.Size(120, 96);
             this.User_panel.TabIndex = 6;
             this.User_panel.Visible = false;
@@ -1060,7 +1055,6 @@
             this.Admin_panel.Name = "Admin_panel";
             this.Admin_panel.ShadowColor = System.Drawing.Color.Black;
             this.Admin_panel.ShadowShift = 3;
-            this.Admin_panel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Surrounded;
             this.Admin_panel.Size = new System.Drawing.Size(120, 130);
             this.Admin_panel.TabIndex = 7;
             this.Admin_panel.Visible = false;

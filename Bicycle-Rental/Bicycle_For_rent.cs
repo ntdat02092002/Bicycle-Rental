@@ -81,5 +81,35 @@ namespace Bicycle_Rental
             else
                 Speed_radio.Visible = false;
         }
+
+        private void Bicycle_For_rent_Load(object sender, EventArgs e)
+        {
+            var names = (from DataRow dRow in Database.Bicycle.Rows
+                                select dRow["tenxe"]).Distinct();
+            string url= System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\asset\Bicycle\";
+            foreach (string name in names)
+            {
+                string pic_path = url + name+".jpg"; 
+                foreach (DataRow dataRow in Database.Bicycle.Rows)
+                {
+                    
+                    if(dataRow["tenxe"].ToString() == name)
+                    {
+                        Bicycle bicycle = new Bicycle();
+                        bicycle.GetTenXe = dataRow["tenxe"].ToString();
+                        bicycle.GetGia = "$"+dataRow["giathue"].ToString();
+                        bicycle.GetPicture = Image.FromFile(pic_path);
+                        this.flowLayoutPanel1.Controls.Add(bicycle);
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void flowLayoutPanel1_ControlAdded(object sender, ControlEventArgs e)
+        {
+            if (flowLayoutPanel1.Controls.Count % 3 == 0)
+                flowLayoutPanel1.SetFlowBreak(e.Control as Control, true);
+        }
     }
 }
