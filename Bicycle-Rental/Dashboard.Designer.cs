@@ -45,7 +45,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.num_penalty = new System.Windows.Forms.Label();
+            this.balance = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,8 +57,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.penalty_status = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -113,11 +111,12 @@
             // 
             // num_bike_rented
             // 
+            this.num_bike_rented.AutoSize = true;
             this.num_bike_rented.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num_bike_rented.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.num_bike_rented.Location = new System.Drawing.Point(29, 40);
+            this.num_bike_rented.Location = new System.Drawing.Point(27, 40);
             this.num_bike_rented.Name = "num_bike_rented";
-            this.num_bike_rented.Size = new System.Drawing.Size(66, 54);
+            this.num_bike_rented.Size = new System.Drawing.Size(39, 47);
             this.num_bike_rented.TabIndex = 5;
             this.num_bike_rented.Text = "0";
             // 
@@ -177,11 +176,12 @@
             // 
             // num_tour_joined
             // 
+            this.num_tour_joined.AutoSize = true;
             this.num_tour_joined.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num_tour_joined.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.num_tour_joined.Location = new System.Drawing.Point(31, 40);
+            this.num_tour_joined.Location = new System.Drawing.Point(29, 40);
             this.num_tour_joined.Name = "num_tour_joined";
-            this.num_tour_joined.Size = new System.Drawing.Size(66, 54);
+            this.num_tour_joined.Size = new System.Drawing.Size(39, 47);
             this.num_tour_joined.TabIndex = 6;
             this.num_tour_joined.Text = "0";
             // 
@@ -228,9 +228,7 @@
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2Panel3.Controls.Add(this.label9);
-            this.guna2Panel3.Controls.Add(this.penalty_status);
-            this.guna2Panel3.Controls.Add(this.num_penalty);
+            this.guna2Panel3.Controls.Add(this.balance);
             this.guna2Panel3.Controls.Add(this.label7);
             this.guna2Panel3.Controls.Add(this.pictureBox2);
             this.guna2Panel3.Controls.Add(this.label4);
@@ -239,15 +237,16 @@
             this.guna2Panel3.Size = new System.Drawing.Size(290, 144);
             this.guna2Panel3.TabIndex = 4;
             // 
-            // num_penalty
+            // balance
             // 
-            this.num_penalty.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_penalty.ForeColor = System.Drawing.Color.Lime;
-            this.num_penalty.Location = new System.Drawing.Point(33, 40);
-            this.num_penalty.Name = "num_penalty";
-            this.num_penalty.Size = new System.Drawing.Size(66, 54);
-            this.num_penalty.TabIndex = 6;
-            this.num_penalty.Text = "0";
+            this.balance.AutoSize = true;
+            this.balance.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.balance.ForeColor = System.Drawing.Color.Lime;
+            this.balance.Location = new System.Drawing.Point(29, 40);
+            this.balance.Name = "balance";
+            this.balance.Size = new System.Drawing.Size(58, 47);
+            this.balance.TabIndex = 6;
+            this.balance.Text = "0$";
             // 
             // label7
             // 
@@ -275,9 +274,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(16, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 25);
+            this.label4.Size = new System.Drawing.Size(78, 25);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Total warning";
+            this.label4.Text = "Balance";
             // 
             // label13
             // 
@@ -359,27 +358,6 @@
     "________________________________________________________________________________" +
     "________";
             // 
-            // penalty_status
-            // 
-            this.penalty_status.AutoSize = true;
-            this.penalty_status.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.penalty_status.ForeColor = System.Drawing.Color.LimeGreen;
-            this.penalty_status.Location = new System.Drawing.Point(83, 112);
-            this.penalty_status.Name = "penalty_status";
-            this.penalty_status.Size = new System.Drawing.Size(46, 20);
-            this.penalty_status.TabIndex = 9;
-            this.penalty_status.Text = "Good";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(26, 112);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 20);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Status -";
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -431,7 +409,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label num_bike_rented;
         private System.Windows.Forms.Label num_tour_joined;
-        private System.Windows.Forms.Label num_penalty;
+        private System.Windows.Forms.Label balance;
         private System.Windows.Forms.Label bike_this_year;
         private System.Windows.Forms.Label bike_this_month;
         private System.Windows.Forms.Label tour_this_year;
@@ -444,7 +422,5 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label penalty_status;
-        private System.Windows.Forms.Label label9;
     }
 }

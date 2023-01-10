@@ -21,8 +21,8 @@ namespace Bicycle_Rental
         {
             InitializeComponent();
             Database.KhoiTao();
+            Database.mainform = this;
         }
-
         private bool MouseIsOverControl(Control control) =>
            control.ClientRectangle.Contains(control.PointToClient(Cursor.Position));
 
