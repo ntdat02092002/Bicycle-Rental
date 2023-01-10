@@ -39,15 +39,10 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.Contact_button = new Guna.UI2.WinForms.Guna2Button();
-            this.Bike_button = new Guna.UI2.WinForms.Guna2Button();
             this.Tour_button = new Guna.UI2.WinForms.Guna2Button();
             this.Home_button = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel_bike = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.Bike_Equipment = new Guna.UI2.WinForms.Guna2Button();
-            this.Bike_For_Sale = new Guna.UI2.WinForms.Guna2Button();
             this.Bike_For_Rent = new Guna.UI2.WinForms.Guna2Button();
-            this.Bike_For_Tour = new Guna.UI2.WinForms.Guna2Button();
             this.Bicycle_tour_panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.Electric_Bikes = new Guna.UI2.WinForms.Guna2Button();
             this.Children_Bikes = new Guna.UI2.WinForms.Guna2Button();
@@ -77,7 +72,6 @@
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel_bike.SuspendLayout();
             this.Bicycle_tour_panel.SuspendLayout();
             this.Contact_panel.SuspendLayout();
             this.User_panel.SuspendLayout();
@@ -96,7 +90,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1182, 30);
+            this.guna2Panel1.Size = new System.Drawing.Size(1184, 30);
             this.guna2Panel1.TabIndex = 0;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -239,10 +233,10 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2ShadowPanel1.Controls.Add(this.Bike_For_Rent);
             this.guna2ShadowPanel1.Controls.Add(this.guna2TextBox1);
             this.guna2ShadowPanel1.Controls.Add(this.guna2Button7);
             this.guna2ShadowPanel1.Controls.Add(this.Contact_button);
-            this.guna2ShadowPanel1.Controls.Add(this.Bike_button);
             this.guna2ShadowPanel1.Controls.Add(this.Tour_button);
             this.guna2ShadowPanel1.Controls.Add(this.Home_button);
             this.guna2ShadowPanel1.Controls.Add(this.pictureBox1);
@@ -254,7 +248,7 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowDepth = 40;
             this.guna2ShadowPanel1.ShadowShift = 2;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1182, 74);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1184, 74);
             this.guna2ShadowPanel1.TabIndex = 1;
             // 
             // guna2TextBox1
@@ -341,36 +335,6 @@
             this.Contact_button.MouseLeave += new System.EventHandler(this.Contact_button_MouseLeave);
             this.Contact_button.MouseHover += new System.EventHandler(this.Contact_button_MouseHover);
             // 
-            // Bike_button
-            // 
-            this.Bike_button.BackColor = System.Drawing.Color.Transparent;
-            this.Bike_button.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.Bike_button.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.Bike_button.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_button.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bike_button.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Bike_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bike_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Bike_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Bike_button.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bike_button.ForeColor = System.Drawing.Color.Black;
-            this.Bike_button.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Bike_button.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.Bike_button.Image = ((System.Drawing.Image)(resources.GetObject("Bike_button.Image")));
-            this.Bike_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Bike_button.ImageSize = new System.Drawing.Size(15, 15);
-            this.Bike_button.Location = new System.Drawing.Point(476, 18);
-            this.Bike_button.Name = "Bike_button";
-            this.Bike_button.Size = new System.Drawing.Size(80, 30);
-            this.Bike_button.TabIndex = 1;
-            this.Bike_button.Text = "Bike";
-            this.Bike_button.MouseLeave += new System.EventHandler(this.Bike_button_MouseLeave);
-            this.Bike_button.MouseHover += new System.EventHandler(this.Bike_button_MouseHover);
-            // 
             // Tour_button
             // 
             this.Tour_button.BackColor = System.Drawing.Color.Transparent;
@@ -438,74 +402,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // panel_bike
-            // 
-            this.panel_bike.BackColor = System.Drawing.Color.Transparent;
-            this.panel_bike.Controls.Add(this.Bike_Equipment);
-            this.panel_bike.Controls.Add(this.Bike_For_Sale);
-            this.panel_bike.Controls.Add(this.Bike_For_Rent);
-            this.panel_bike.Controls.Add(this.Bike_For_Tour);
-            this.panel_bike.FillColor = System.Drawing.Color.White;
-            this.panel_bike.Location = new System.Drawing.Point(485, 78);
-            this.panel_bike.Margin = new System.Windows.Forms.Padding(2);
-            this.panel_bike.Name = "panel_bike";
-            this.panel_bike.ShadowColor = System.Drawing.Color.Black;
-            this.panel_bike.ShadowShift = 3;
-            this.panel_bike.Size = new System.Drawing.Size(167, 130);
-            this.panel_bike.TabIndex = 3;
-            this.panel_bike.Visible = false;
-            this.panel_bike.MouseLeave += new System.EventHandler(this.panel_bike_MouseLeave);
-            // 
-            // Bike_Equipment
-            // 
-            this.Bike_Equipment.BackColor = System.Drawing.Color.Transparent;
-            this.Bike_Equipment.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bike_Equipment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_Equipment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_Equipment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Bike_Equipment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Bike_Equipment.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Bike_Equipment.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_Equipment.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bike_Equipment.ForeColor = System.Drawing.Color.Black;
-            this.Bike_Equipment.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_Equipment.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Bike_Equipment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Bike_Equipment.ImageSize = new System.Drawing.Size(30, 30);
-            this.Bike_Equipment.Location = new System.Drawing.Point(0, 90);
-            this.Bike_Equipment.Name = "Bike_Equipment";
-            this.Bike_Equipment.Size = new System.Drawing.Size(167, 30);
-            this.Bike_Equipment.TabIndex = 10;
-            this.Bike_Equipment.Text = "Bicycle equipment";
-            this.Bike_Equipment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Bike_Equipment.Click += new System.EventHandler(this.bike_equipment_btn_Click);
-            this.Bike_Equipment.MouseLeave += new System.EventHandler(this.panel_bike_MouseLeave);
-            // 
-            // Bike_For_Sale
-            // 
-            this.Bike_For_Sale.BackColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Sale.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bike_For_Sale.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_For_Sale.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_For_Sale.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Bike_For_Sale.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Bike_For_Sale.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Bike_For_Sale.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Sale.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bike_For_Sale.ForeColor = System.Drawing.Color.Black;
-            this.Bike_For_Sale.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Sale.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Bike_For_Sale.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Bike_For_Sale.ImageSize = new System.Drawing.Size(30, 30);
-            this.Bike_For_Sale.Location = new System.Drawing.Point(0, 60);
-            this.Bike_For_Sale.Name = "Bike_For_Sale";
-            this.Bike_For_Sale.Size = new System.Drawing.Size(167, 30);
-            this.Bike_For_Sale.TabIndex = 9;
-            this.Bike_For_Sale.Text = "Bicycle for sale";
-            this.Bike_For_Sale.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Bike_For_Sale.Click += new System.EventHandler(this.bike_for_sale_btn_Click);
-            this.Bike_For_Sale.MouseLeave += new System.EventHandler(this.panel_bike_MouseLeave);
-            // 
             // Bike_For_Rent
             // 
             this.Bike_For_Rent.BackColor = System.Drawing.Color.Transparent;
@@ -514,7 +410,6 @@
             this.Bike_For_Rent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Bike_For_Rent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Bike_For_Rent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Bike_For_Rent.Dock = System.Windows.Forms.DockStyle.Top;
             this.Bike_For_Rent.FillColor = System.Drawing.Color.Transparent;
             this.Bike_For_Rent.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bike_For_Rent.ForeColor = System.Drawing.Color.Black;
@@ -522,42 +417,13 @@
             this.Bike_For_Rent.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Bike_For_Rent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Bike_For_Rent.ImageSize = new System.Drawing.Size(30, 30);
-            this.Bike_For_Rent.Location = new System.Drawing.Point(0, 30);
+            this.Bike_For_Rent.Location = new System.Drawing.Point(483, 8);
             this.Bike_For_Rent.Name = "Bike_For_Rent";
-            this.Bike_For_Rent.Size = new System.Drawing.Size(167, 30);
+            this.Bike_For_Rent.Size = new System.Drawing.Size(87, 50);
             this.Bike_For_Rent.TabIndex = 8;
-            this.Bike_For_Rent.Text = "Bicycle for rent";
+            this.Bike_For_Rent.Text = "Bicycle";
             this.Bike_For_Rent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Bike_For_Rent.Click += new System.EventHandler(this.bike_for_rent_btn_Click);
-            this.Bike_For_Rent.MouseLeave += new System.EventHandler(this.panel_bike_MouseLeave);
-            // 
-            // Bike_For_Tour
-            // 
-            this.Bike_For_Tour.BackColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Tour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bike_For_Tour.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_For_Tour.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_For_Tour.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Bike_For_Tour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Bike_For_Tour.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Bike_For_Tour.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Tour.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bike_For_Tour.ForeColor = System.Drawing.Color.Black;
-            this.Bike_For_Tour.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Tour.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Bike_For_Tour.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.Bike_For_Tour.Image = ((System.Drawing.Image)(resources.GetObject("Bike_For_Tour.Image")));
-            this.Bike_For_Tour.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Bike_For_Tour.ImageSize = new System.Drawing.Size(15, 15);
-            this.Bike_For_Tour.Location = new System.Drawing.Point(0, 0);
-            this.Bike_For_Tour.Name = "Bike_For_Tour";
-            this.Bike_For_Tour.Size = new System.Drawing.Size(167, 30);
-            this.Bike_For_Tour.TabIndex = 7;
-            this.Bike_For_Tour.Text = "Bicycle for tour";
-            this.Bike_For_Tour.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Bike_For_Tour.Click += new System.EventHandler(this.bike_for_tour_btn_Click);
-            this.Bike_For_Tour.MouseLeave += new System.EventHandler(this.panel_bike_MouseLeave);
-            this.Bike_For_Tour.MouseHover += new System.EventHandler(this.bike_for_tour_btn_MouseHover);
             // 
             // Bicycle_tour_panel
             // 
@@ -577,7 +443,6 @@
             this.Bicycle_tour_panel.Size = new System.Drawing.Size(171, 190);
             this.Bicycle_tour_panel.TabIndex = 3;
             this.Bicycle_tour_panel.Visible = false;
-            this.Bicycle_tour_panel.MouseLeave += new System.EventHandler(this.Bicycle_tour_panel_MouseLeave);
             // 
             // Electric_Bikes
             // 
@@ -601,7 +466,6 @@
             this.Electric_Bikes.TabIndex = 12;
             this.Electric_Bikes.Text = "Electric Bikes";
             this.Electric_Bikes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Electric_Bikes.MouseLeave += new System.EventHandler(this.Bicycle_tour_panel_MouseLeave);
             // 
             // Children_Bikes
             // 
@@ -625,7 +489,6 @@
             this.Children_Bikes.TabIndex = 11;
             this.Children_Bikes.Text = "Children Bikes";
             this.Children_Bikes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Children_Bikes.MouseLeave += new System.EventHandler(this.Bicycle_tour_panel_MouseLeave);
             // 
             // Single_Speed
             // 
@@ -649,7 +512,6 @@
             this.Single_Speed.TabIndex = 10;
             this.Single_Speed.Text = "Single-Speed Bikes";
             this.Single_Speed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Single_Speed.MouseLeave += new System.EventHandler(this.Bicycle_tour_panel_MouseLeave);
             // 
             // Mountain_Bikes
             // 
@@ -673,7 +535,6 @@
             this.Mountain_Bikes.TabIndex = 9;
             this.Mountain_Bikes.Text = "Mountain Bikes";
             this.Mountain_Bikes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Mountain_Bikes.MouseLeave += new System.EventHandler(this.Bicycle_tour_panel_MouseLeave);
             // 
             // Road_Bikes
             // 
@@ -697,7 +558,6 @@
             this.Road_Bikes.TabIndex = 8;
             this.Road_Bikes.Text = "Road Bikes";
             this.Road_Bikes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Road_Bikes.MouseLeave += new System.EventHandler(this.Bicycle_tour_panel_MouseLeave);
             // 
             // Hybrid_Bicycles
             // 
@@ -721,7 +581,6 @@
             this.Hybrid_Bicycles.TabIndex = 7;
             this.Hybrid_Bicycles.Text = "Hybrid Bicycles";
             this.Hybrid_Bicycles.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Hybrid_Bicycles.MouseLeave += new System.EventHandler(this.Bicycle_tour_panel_MouseLeave);
             // 
             // Contact_panel
             // 
@@ -1163,7 +1022,7 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
@@ -1174,7 +1033,6 @@
             this.Controls.Add(this.Contact_panel);
             this.Controls.Add(this.Sub_Form_panel);
             this.Controls.Add(this.Bicycle_tour_panel);
-            this.Controls.Add(this.panel_bike);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1186,7 +1044,6 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2ShadowPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel_bike.ResumeLayout(false);
             this.Bicycle_tour_panel.ResumeLayout(false);
             this.Contact_panel.ResumeLayout(false);
             this.User_panel.ResumeLayout(false);
@@ -1203,13 +1060,8 @@
         private Guna.UI2.WinForms.Guna2Button GioHang_button;
         private Guna.UI2.WinForms.Guna2Button Home_button;
         private Guna.UI2.WinForms.Guna2Button Contact_button;
-        private Guna.UI2.WinForms.Guna2Button Bike_button;
         private Guna.UI2.WinForms.Guna2Button Tour_button;
-        private Guna.UI2.WinForms.Guna2ShadowPanel panel_bike;
-        private Guna.UI2.WinForms.Guna2Button Bike_Equipment;
-        private Guna.UI2.WinForms.Guna2Button Bike_For_Sale;
         private Guna.UI2.WinForms.Guna2Button Bike_For_Rent;
-        private Guna.UI2.WinForms.Guna2Button Bike_For_Tour;
         private Guna.UI2.WinForms.Guna2ShadowPanel Bicycle_tour_panel;
         private Guna.UI2.WinForms.Guna2Button Electric_Bikes;
         private Guna.UI2.WinForms.Guna2Button Children_Bikes;

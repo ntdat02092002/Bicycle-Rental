@@ -26,59 +26,11 @@ namespace Bicycle_Rental
         private bool MouseIsOverControl(Control control) =>
            control.ClientRectangle.Contains(control.PointToClient(Cursor.Position));
 
-        private void Bike_button_MouseHover(object sender, EventArgs e)
-        {
-            panel_bike.BringToFront();
-            panel_bike.Visible = true;
-        }
-
-        private void Bike_button_MouseLeave(object sender, EventArgs e)
-        {
-            if (!MouseIsOverControl(panel_bike) && !MouseIsOverControl(Bike_button))
-            {
-                panel_bike.Visible = false;
-            }
-
-        }
-        private void panel_bike_MouseLeave(object sender, EventArgs e)
-        {
-            if (!MouseIsOverControl(panel_bike) && !MouseIsOverControl(Bike_button))
-            {
-                panel_bike.Visible = false;
-            }
-
-            if (!MouseIsOverControl(Bicycle_tour_panel) && !MouseIsOverControl(Bike_For_Tour))
-            {
-                Bicycle_tour_panel.Visible = false;
-            }
-        }
-
         private void bike_for_tour_btn_MouseHover(object sender, EventArgs e)
         {
             Bicycle_tour_panel.BringToFront();
             Bicycle_tour_panel.Visible = true;
 
-        }
-
-        private void bike_for_tour_btn_MouseLeave(object sender, EventArgs e)
-        {
-            if (!MouseIsOverControl(Bicycle_tour_panel) && !MouseIsOverControl(Bike_For_Tour))
-            {
-                Bicycle_tour_panel.Visible = false;
-            }
-        }
-
-        private void Bicycle_tour_panel_MouseLeave(object sender, EventArgs e)
-        {
-            if (!MouseIsOverControl(Bicycle_tour_panel) && !MouseIsOverControl(Bike_For_Tour))
-            {
-                Bicycle_tour_panel.Visible = false;
-            }
-
-            if (!MouseIsOverControl(panel_bike) && !MouseIsOverControl(Bicycle_tour_panel))
-            {
-                panel_bike.Visible = false;
-            }
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -138,11 +90,11 @@ namespace Bicycle_Rental
 
         public void Open_Sub_Form(Form sub)
         {
-            string url = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\asset\logo\Background.jpg";
+            //string url = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\asset\logo\Background.jpg";
             sub.TopLevel = false;
             sub.Dock = DockStyle.Fill;//Set the subform as a control
-            sub.BackgroundImage = Image.FromFile(url);
-            sub.BackgroundImageLayout = ImageLayout.Stretch;
+            //sub.BackgroundImage = Image.FromFile(url);
+            //sub.BackgroundImageLayout = ImageLayout.Stretch;
             sub.FormBorderStyle = FormBorderStyle.None;
             Sub_Form_panel.Controls.Add(sub);
             sub.Show();

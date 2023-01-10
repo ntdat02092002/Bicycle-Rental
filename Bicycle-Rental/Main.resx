@@ -311,28 +311,6 @@
         7I7/whX2og52/0AXe5UNtnfiBbf2g1JKKaWUUiqhsmwLJrM6k4ld6I8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="resource.Image3" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAVFJREFUaEPtlLtKxFAYhIOXQkRsBEGwtxB8AwsL8RFsrLTwFSzkLBsXdl22lgWf
-        YAsbC/EJLGwES0FQsFTEygv4OyHTmD3iJTlJhPnga7LJzByWJBJCCCGEEEIExZzbg8/WaFgppl0x6/OD
-        wIehktCik/X5Qdi+tySk6GR9fhA2Ao+8RWE8tsFglPXFYL3eBILPMkUhPLdud5K1xYJ/YQYFV5nC4nTu
-        2lqtWdaFASULMMRLfZ9ksyYsKFqGRX5WX5C3wvhyQOE6fPeM+Z1pxgZjywXFu5/G/M0dxlUDBhxkBv1c
-        5w4ZUx3W749jzOnQuO89wQHGGFMt1ulMYcyFZ+RXXlq7Pc3H6wEOMAdvPWOz3lkcz/OxeoEDLMJHz+hU
-        556s2Vzi7fUEI9cw9s0z/hWu8rZ6g6FbngNs8+f/QTIYJu/EDdzkZSGEEEIIIURdiKIPQF3p/8QTNd0A
-        AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="Bike_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAQNJREFUaEPt1L9KQmEYx/FD2RARLUIgtDsE3oGDQ3QJLk05eAsNTjZ5Ay1eg4uD
-        dAUOLoJjECQ4FuHUH0i/zxbyEB1433Ne4feFz+Jwnp/DOZlSSimllFIqdvf4wKYgdquPYL3BOxST3QzW
-        AN6RmOxmsA4wgncohjEOEbRjTOEdDGmGE0Spiid4h0N4xjmiVkeMl/oV9uxCaiLkZ/UTLRRaGz/wBuVh
-        z7hBKfXgjcrjDqX2AG/YfwxRekd4hDfwLxNUkESnmMMb6lngDElVwxLe4N9WuECSXeId3nCzRgNJd41v
-        7I7/whX2og52/0AXe5UNtnfiBbf2g1JKKaWUUiqhsmwLJrM6k4ld6I8AAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABKEAAADcCAYAAACoNLIrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
@@ -814,29 +792,6 @@
         IYQQQgghhBCdIxNKCCGEEEIIIYQQQnSOTCghhBBCCCGEEEII0TkyoYQQQgghhBBCCCFE58iEEkIIIYQQ
         QgghhBCdIxNKCCGEEEIIIYQQQnSOTCghhBBCCCGEEEII0TkyoYQQQgghhBBCCCFE58iEEkIIIYQQQggh
         hBCdIxNKCCGEEEIIIYQQQnSOTCghhBBCCCGEEEII0TFF8f8D0dXjJYM9ZAUAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="resource.Image4" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAWZJREFUaEPtmLFKw1AUhoPi4uLopLujvoDO4hvoKCh9iT9tLJS+QZe6d9Fdn8DR
-        7gUHO+rgYlG8npAfLPakTRxy78XzwUdocu7hPzSE5CaGYRiG8W9xwJVL01c59sU1no4HCf0uAzh6I783
-        eSkO5sIXAg+u293m5fBZGKAYYuI6nT2WhI06QC7w4trtQ5aFixr+x5l4ytIw+RV4UeBLTFkeHmpoTWDo
-        BoMNLgsHNWy5d67X2+LSMFBCLhd4dFm2w+X+UUOu9lkes/ts4RclXFXf5N84Zht/KMHq+CFDXLKVH5RQ
-        9QXO2a551ED1fWK75lHC/MXoB7hgu+ZRwlQX+BRbbOUHNVg188foCdv4Qwm2WmAqHrCFX9SAyx1L+F0u
-        948SsFzgPuaXues4X6cj/6CZSfgzloaJErow/6gHjlgWLiXhI95WiW5ja35rEbgVo9tazCR0fr/33Wi0
-        ztOGYRiGYVQjSb4BQHPqZBwlqLsAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="Bike_For_Tour.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAARlJREFUaEPt2DFKA1EUheEhYpPG0ir2lroBU4s7iKWguApBKxehS4i9WYGl9oKF
-        llrYKIbof8GBICfJm+rdi/eHr5nqDIQw7zVZlmVZ9p+7wBsu0bMH0frA968x+ghVO751h02E6e8LmEds
-        I0TqBcwr9uA+Nb71iRFcp4bPm+EMblOjlSusw11q7CK32ICr1NBl7jGAm9TIVZ6xAxepgSXesY/qqXGl
-        vnCCqqlhXR2hWmpQV0+olhrUVfgXOEa11KBSU5yiampYCfsbPUD11LhVXrALF6mByzxgC25SIxeZIOzH
-        3DVCfk6HPtDYkfIQrlPDjR3qh3CfGh/6WiXcxdb81eINwl0tnsN+73a5u2YPsizLsiwrrml+ADuBOuL+
-        XVMbAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
