@@ -41,5 +41,10 @@ namespace Bicycle_Rental
             set { this.pictureBox1.Image = value; }
             get { return this.pictureBox1.Image; }
         }
+        public string GetDaiLy
+        {
+            set { this.DaiLy.Text = value; }
+            get { return this.DaiLy.Text; }
+        }
     }
 }
