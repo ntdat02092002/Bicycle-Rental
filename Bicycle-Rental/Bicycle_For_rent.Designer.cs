@@ -67,6 +67,7 @@ namespace Bicycle_Rental
             this.panel1.Controls.Add(this.Bike_button);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1338, 124);
             this.panel1.TabIndex = 7;
@@ -128,6 +129,35 @@ namespace Bicycle_Rental
             this.Filter.Text = "Filter";
             this.Filter.Click += new System.EventHandler(this.Filter_Click);
             // 
+            // Filter
+            // 
+            this.Filter.BackColor = System.Drawing.Color.Transparent;
+            this.Filter.BorderColor = System.Drawing.Color.Transparent;
+            this.Filter.BorderThickness = 2;
+            this.Filter.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.Filter.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.Filter.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.Filter.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filter.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Filter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Filter.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Filter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Filter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Filter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Filter.FillColor = System.Drawing.Color.LightPink;
+            this.Filter.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filter.ForeColor = System.Drawing.Color.White;
+            this.Filter.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Filter.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Filter.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Filter.ImageSize = new System.Drawing.Size(30, 30);
+            this.Filter.Location = new System.Drawing.Point(1161, 208);
+            this.Filter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Filter.Name = "Filter";
+            this.Filter.Size = new System.Drawing.Size(132, 47);
+            this.Filter.TabIndex = 7;
+            this.Filter.Text = "Filter";
+            // 
             // Speed_button
             // 
             this.Speed_button.BackColor = System.Drawing.Color.Transparent;
@@ -149,9 +179,10 @@ namespace Bicycle_Rental
             this.Speed_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Speed_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Speed_button.ImageSize = new System.Drawing.Size(30, 30);
-            this.Speed_button.Location = new System.Drawing.Point(759, 4);
+            this.Speed_button.Location = new System.Drawing.Point(1012, 5);
+            this.Speed_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Speed_button.Name = "Speed_button";
-            this.Speed_button.Size = new System.Drawing.Size(213, 38);
+            this.Speed_button.Size = new System.Drawing.Size(284, 47);
             this.Speed_button.TabIndex = 7;
             this.Speed_button.Text = "Speed";
             this.Speed_button.Click += new System.EventHandler(this.Speed_button_Click);
@@ -177,9 +208,10 @@ namespace Bicycle_Rental
             this.Size_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Size_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Size_button.ImageSize = new System.Drawing.Size(30, 30);
-            this.Size_button.Location = new System.Drawing.Point(474, 4);
+            this.Size_button.Location = new System.Drawing.Point(632, 5);
+            this.Size_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Size_button.Name = "Size_button";
-            this.Size_button.Size = new System.Drawing.Size(213, 38);
+            this.Size_button.Size = new System.Drawing.Size(284, 47);
             this.Size_button.TabIndex = 9;
             this.Size_button.Text = "Size";
             this.Size_button.Click += new System.EventHandler(this.Size_button_Click);
@@ -205,9 +237,10 @@ namespace Bicycle_Rental
             this.Color_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Color_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Color_button.ImageSize = new System.Drawing.Size(30, 30);
-            this.Color_button.Location = new System.Drawing.Point(175, 48);
+            this.Color_button.Location = new System.Drawing.Point(233, 59);
+            this.Color_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Color_button.Name = "Color_button";
-            this.Color_button.Size = new System.Drawing.Size(213, 38);
+            this.Color_button.Size = new System.Drawing.Size(284, 47);
             this.Color_button.TabIndex = 10;
             this.Color_button.Text = "Color";
             this.Color_button.Click += new System.EventHandler(this.Color_button_Click);
@@ -233,9 +266,10 @@ namespace Bicycle_Rental
             this.Bike_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Bike_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Bike_button.ImageSize = new System.Drawing.Size(30, 30);
-            this.Bike_button.Location = new System.Drawing.Point(175, 4);
+            this.Bike_button.Location = new System.Drawing.Point(233, 5);
+            this.Bike_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Bike_button.Name = "Bike_button";
-            this.Bike_button.Size = new System.Drawing.Size(213, 38);
+            this.Bike_button.Size = new System.Drawing.Size(284, 47);
             this.Bike_button.TabIndex = 11;
             this.Bike_button.Text = "Bike";
             this.Bike_button.Click += new System.EventHandler(this.Bike_button_Click);
@@ -336,7 +370,7 @@ namespace Bicycle_Rental
             // 
             // Bicycle_For_rent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
@@ -347,6 +381,7 @@ namespace Bicycle_Rental
             this.Controls.Add(this.Color_radio);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Bicycle_For_rent";
             this.Text = "Bicycle_For_rent";
             this.Load += new System.EventHandler(this.Bicycle_For_rent_Load);
