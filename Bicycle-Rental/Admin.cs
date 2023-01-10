@@ -93,11 +93,7 @@ namespace Bicycle_Rental
 
         private void tour_btn_Click(object sender, EventArgs e)
         {
-            show_panel.Controls.Clear();
-
-            data.DataSource = Database.Tour;
-            show_panel.Controls.Add(data);
-            data.Dock = DockStyle.Fill;
+            
         }
 
         private void user_btn_Click(object sender, EventArgs e)
