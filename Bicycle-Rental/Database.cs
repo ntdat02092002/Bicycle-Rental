@@ -22,7 +22,7 @@ namespace Bicycle_Rental
         {
             asset_path = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\asset\";
 
-            string[] cols_bicycle = { "maxe", "tenxe", "loai", "giathue", "madaily", "desciption", "dathue", "mausac", "kichthuoc", "tocdo" };
+            string[] cols_bicycle = { "maxe", "tenxe", "loai", "giathue", "madiadiem", "desciption", "dathue", "mausac", "kichthuoc", "tocdo" };
             Bicycle = ExcelToDataTable(asset_path + "bicycle.xlsx", cols_bicycle);
 
             string[] cols_user = { "tendangnhap", "matkhau", "ten", "avatar", "gioitinh", "ngay", "thang", "nam", "email", "sdt", "admin" };

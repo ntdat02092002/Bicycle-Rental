@@ -33,13 +33,12 @@ namespace Bicycle_Rental
             this.Add_to_cart_button = new Guna.UI2.WinForms.Guna2Button();
             this.TenXe = new System.Windows.Forms.Label();
             this.GiaThue = new System.Windows.Forms.Label();
-            this.DaiLy = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(15, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(235, 202);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -69,7 +68,7 @@ namespace Bicycle_Rental
             this.Add_to_cart_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Add_to_cart_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Add_to_cart_button.ImageSize = new System.Drawing.Size(30, 30);
-            this.Add_to_cart_button.Location = new System.Drawing.Point(64, 270);
+            this.Add_to_cart_button.Location = new System.Drawing.Point(58, 270);
             this.Add_to_cart_button.Name = "Add_to_cart_button";
             this.Add_to_cart_button.Size = new System.Drawing.Size(132, 38);
             this.Add_to_cart_button.TabIndex = 8;
@@ -100,30 +99,17 @@ namespace Bicycle_Rental
             this.GiaThue.TabIndex = 9;
             this.GiaThue.Text = "Giá";
             // 
-            // DaiLy
-            // 
-            this.DaiLy.AutoSize = true;
-            this.DaiLy.BackColor = System.Drawing.Color.Transparent;
-            this.DaiLy.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DaiLy.ForeColor = System.Drawing.Color.White;
-            this.DaiLy.Location = new System.Drawing.Point(5, 250);
-            this.DaiLy.Name = "DaiLy";
-            this.DaiLy.Size = new System.Drawing.Size(41, 17);
-            this.DaiLy.TabIndex = 9;
-            this.DaiLy.Text = "Đại lý";
-            // 
             // Bicycle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.GiaThue);
-            this.Controls.Add(this.DaiLy);
             this.Controls.Add(this.TenXe);
             this.Controls.Add(this.Add_to_cart_button);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Bicycle";
-            this.Size = new System.Drawing.Size(264, 311);
+            this.Size = new System.Drawing.Size(260, 311);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -136,6 +122,5 @@ namespace Bicycle_Rental
         private Guna.UI2.WinForms.Guna2Button Add_to_cart_button;
         private System.Windows.Forms.Label TenXe;
         private System.Windows.Forms.Label GiaThue;
-        private System.Windows.Forms.Label DaiLy;
     }
 }
