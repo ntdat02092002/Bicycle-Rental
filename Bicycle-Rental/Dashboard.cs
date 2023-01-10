@@ -32,6 +32,11 @@ namespace Bicycle_Rental
             DataRow User = Database.User.Select(String.Format("tendangnhap='{0}'", main.user_name))[0];
             balance.Text = String.Format("{0}$", User["money"]);
 
+            DataRow[] drrr = Database.History_tour.Select(String.Format("username = '{0}'", main.user_name));
+            num_tour_joined.Text = drrr.Length.ToString();
+            tour_this_month.Text = String.Format("This month - {0}", drrr.Length);
+            tour_this_year.Text = String.Format("This year - {0}", drrr.Length);
+
         }
 
         void Load_Recent_Renting()

@@ -23,7 +23,7 @@ namespace Bicycle_Rental
 
         void LoadTour()
         {
-            DataRow[] user_history = Database.History_tour.Select("username='" + Database.User + "'");
+            DataRow[] user_history = Database.History_tour.Select("username='" + Database.CurentUser + "'");
             foreach (DataRow row in Database.Tour.Rows)
             {
                 TourItem item = new TourItem(main, row[0].ToString(), row[12].ToString(), main.user_name);
@@ -35,12 +35,14 @@ namespace Bicycle_Rental
                 item.age.Text = String.Format("{0} age+", row[8]);
                 item.number.Text = String.Format("{0}/{1}", row[11], row[10]);
                 item.Price.Text = "$" + row[9];
-                item.GetJoin_Now_Button().Enabled = true;
+                item.join_btn.Enabled = true;
                 foreach (DataRow dataRow in user_history)
                 {
                     if(dataRow["tour_code"].ToString() == row[0].ToString())
                     {
-                        item.GetJoin_Now_Button().Enabled=false;
+                        item.join_btn.Enabled = false;
+                        item.join_btn.Text = "Joined";
+                        break;
                     }
                 }
                 if (int.Parse(row[11].ToString()) == int.Parse(row[10].ToString()))
