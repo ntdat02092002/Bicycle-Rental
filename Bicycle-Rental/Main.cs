@@ -300,5 +300,11 @@ namespace Bicycle_Rental
             Agency sub = new Agency(this);
             this.Open_Sub_Form(sub);
         }
+
+        private void Tour_button_Click(object sender, EventArgs e)
+        {
+            Tour sub = new Tour(this);
+            this.Open_Sub_Form(sub);
+        }
     }
 }
