@@ -25,7 +25,7 @@ namespace Bicycle_Rental
             string[] cols_bicycle = { "maxe", "tenxe", "loai", "giathue", "madaily", "desciption", "dathue", "mausac", "kichthuoc", "tocdo" };
             Bicycle = ExcelToDataTable(asset_path + "bicycle.xlsx", cols_bicycle);
 
-            string[] cols_user = { "tendangnhap", "matkhau", "ten", "avatar", "gioitinh", "ngay", "thang", "nam", "email", "sdt", "admin" };
+            string[] cols_user = { "tendangnhap", "matkhau", "ten", "avatar", "gioitinh", "ngay", "thang", "nam", "email", "sdt", "admin", "penalty" };
             User = ExcelToDataTable(asset_path + "user.xlsx", cols_user);
 
             string[] cols_agency = { "madaily", "tendaily", "diachi", "tinh", "sdt", "latitude", "longitude" };

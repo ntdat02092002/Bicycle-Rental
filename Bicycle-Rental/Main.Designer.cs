@@ -36,13 +36,13 @@
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Bike_For_Rent = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.Contact_button = new Guna.UI2.WinForms.Guna2Button();
             this.Tour_button = new Guna.UI2.WinForms.Guna2Button();
             this.Home_button = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Bike_For_Rent = new Guna.UI2.WinForms.Guna2Button();
             this.Bicycle_tour_panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.Electric_Bikes = new Guna.UI2.WinForms.Guna2Button();
             this.Children_Bikes = new Guna.UI2.WinForms.Guna2Button();
@@ -251,6 +251,29 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1184, 74);
             this.guna2ShadowPanel1.TabIndex = 1;
             // 
+            // Bike_For_Rent
+            // 
+            this.Bike_For_Rent.BackColor = System.Drawing.Color.Transparent;
+            this.Bike_For_Rent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bike_For_Rent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Bike_For_Rent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Bike_For_Rent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Bike_For_Rent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Bike_For_Rent.FillColor = System.Drawing.Color.Transparent;
+            this.Bike_For_Rent.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bike_For_Rent.ForeColor = System.Drawing.Color.Black;
+            this.Bike_For_Rent.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Bike_For_Rent.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Bike_For_Rent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Bike_For_Rent.ImageSize = new System.Drawing.Size(30, 30);
+            this.Bike_For_Rent.Location = new System.Drawing.Point(483, 8);
+            this.Bike_For_Rent.Name = "Bike_For_Rent";
+            this.Bike_For_Rent.Size = new System.Drawing.Size(87, 50);
+            this.Bike_For_Rent.TabIndex = 8;
+            this.Bike_For_Rent.Text = "Bicycle";
+            this.Bike_For_Rent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Bike_For_Rent.Click += new System.EventHandler(this.bike_for_rent_btn_Click);
+            // 
             // guna2TextBox1
             // 
             this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
@@ -401,29 +424,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // Bike_For_Rent
-            // 
-            this.Bike_For_Rent.BackColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Rent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bike_For_Rent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_For_Rent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_For_Rent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Bike_For_Rent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Bike_For_Rent.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Rent.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bike_For_Rent.ForeColor = System.Drawing.Color.Black;
-            this.Bike_For_Rent.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Rent.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Bike_For_Rent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Bike_For_Rent.ImageSize = new System.Drawing.Size(30, 30);
-            this.Bike_For_Rent.Location = new System.Drawing.Point(483, 8);
-            this.Bike_For_Rent.Name = "Bike_For_Rent";
-            this.Bike_For_Rent.Size = new System.Drawing.Size(87, 50);
-            this.Bike_For_Rent.TabIndex = 8;
-            this.Bike_For_Rent.Text = "Bicycle";
-            this.Bike_For_Rent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Bike_For_Rent.Click += new System.EventHandler(this.bike_for_rent_btn_Click);
             // 
             // Bicycle_tour_panel
             // 
@@ -865,7 +865,7 @@
             this.Dashboard_Button.Name = "Dashboard_Button";
             this.Dashboard_Button.Size = new System.Drawing.Size(120, 30);
             this.Dashboard_Button.TabIndex = 9;
-            this.Dashboard_Button.Text = "History";
+            this.Dashboard_Button.Text = "Dashboard";
             this.Dashboard_Button.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Dashboard_Button.Click += new System.EventHandler(this.Dashboard_admin_btn_Click);
             this.Dashboard_Button.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);
@@ -983,7 +983,7 @@
             this.Dashboard_admin_btn.Name = "Dashboard_admin_btn";
             this.Dashboard_admin_btn.Size = new System.Drawing.Size(120, 30);
             this.Dashboard_admin_btn.TabIndex = 9;
-            this.Dashboard_admin_btn.Text = "History";
+            this.Dashboard_admin_btn.Text = "Dashboard";
             this.Dashboard_admin_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Dashboard_admin_btn.Click += new System.EventHandler(this.Dashboard_admin_btn_Click);
             this.Dashboard_admin_btn.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);

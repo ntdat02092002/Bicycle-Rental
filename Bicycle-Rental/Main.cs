@@ -263,7 +263,7 @@ namespace Bicycle_Rental
 
         private void Dashboard_admin_btn_Click(object sender, EventArgs e)
         {
-            History sub = new History(this);
+            Dashboard sub = new Dashboard(this);
             this.Open_Sub_Form(sub);
         }
     }

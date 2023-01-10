@@ -69,7 +69,7 @@ namespace Bicycle_Rental
                 return;
             }
 
-            Database.User.Rows.Add(user_name, pass, name, "", "Nam", "", "", "", "", "", "0");
+            Database.User.Rows.Add(user_name, pass, name, "", "Nam", "", "", "", "", "", "0", "0");
             this.main.is_login = true;
             this.main.set_name_in_login_btn(name);
             this.main.is_admin = false;
