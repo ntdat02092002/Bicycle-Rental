@@ -100,6 +100,7 @@ namespace Bicycle_Rental
                         bicycle.GetGia = "$"+dataRow["giathue"].ToString();
                         bicycle.GetPicture = Image.FromFile(pic_path);
                         bicycle.GetDaiLy = Database.Agency.Select("madaily='" + dataRow["madaily"].ToString() + "'")[0]["tendaily"].ToString();
+                        bicycle.GetMaxe = dataRow["maxe"].ToString();
                         this.flowLayoutPanel1.Controls.Add(bicycle);
                         break;
                     }

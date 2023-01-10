@@ -11,6 +11,8 @@ namespace Bicycle_Rental
 {
     internal class Database
     {
+        public static Main mainform { get; set; }
+        public static int money { get; set; }
         public static string asset_path;
         public static DataTable Bicycle { get; set; }
         public static DataTable User { get; set; }
@@ -23,16 +25,17 @@ namespace Bicycle_Rental
         public static string CurentUser { get; set; }
         public static void KhoiTao()
         {
+            money = 0;
             CurentUser = "";
             asset_path = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\asset\";
 
             string[] cols_bicycle = { "maxe", "tenxe", "loai", "giathue", "madaily", "desciption", "dathue", "mausac", "kichthuoc", "tocdo" };
             Bicycle = ExcelToDataTable(asset_path + "bicycle.xlsx", cols_bicycle);
 
-            string[] cols_user = { "tendangnhap", "matkhau", "ten", "avatar", "gioitinh", "ngay", "thang", "nam", "email", "sdt", "admin" };
+            string[] cols_user = { "tendangnhap", "matkhau", "ten", "avatar", "gioitinh", "ngay", "thang", "nam", "email", "sdt", "admin","money"};
             User = ExcelToDataTable(asset_path + "user.xlsx", cols_user);
 
-            string[] cols_history = { "username", "maxe", "ngaylay", "ngaytra", "ngaydat", "loaixe" };
+            string[] cols_history = { "username", "maxe", "loaixe", "ngaylay", "ngaytra", "ngaydat","thanhtoan" };
             History = ExcelToDataTable(asset_path + "History.xlsx", cols_history);
 
             string[] cols_agency = { "madaily", "tendaily", "diachi", "tinh", "sdt", "latitude", "longitude" };
