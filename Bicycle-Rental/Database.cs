@@ -22,6 +22,7 @@ namespace Bicycle_Rental
 
         public static DataTable History { get; set; }
 
+        public static DataTable History_tour { get; set; }
         public static string CurentUser { get; set; }
         public static void KhoiTao()
         {
@@ -37,6 +38,9 @@ namespace Bicycle_Rental
 
             string[] cols_history = { "username", "maxe", "loaixe", "ngaylay", "ngaytra", "ngaydat","thanhtoan" };
             History = ExcelToDataTable(asset_path + "History.xlsx", cols_history);
+
+            string[] cols_history_tour = { "username", "ngay_join", "tour_code" };
+            History_tour = ExcelToDataTable(asset_path + "history_tour.xlsx", cols_history_tour);
 
             string[] cols_agency = { "madaily", "tendaily", "diachi", "tinh", "sdt", "latitude", "longitude" };
             Agency = ExcelToDataTable(asset_path + "agency.xlsx", cols_agency);
