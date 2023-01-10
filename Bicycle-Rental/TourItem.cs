@@ -32,7 +32,10 @@ namespace Bicycle_Rental
             TourMap map = new TourMap(route);
             map.Show();
         }
-
+        public Guna.UI2.WinForms.Guna2Button GetJoin_Now_Button()
+        {
+            return this.join_btn;
+        }
         private void join_btn_Click(object sender, EventArgs e)
         {
             if (main.is_login == false)
@@ -40,7 +43,25 @@ namespace Bicycle_Rental
                 main.Login.PerformClick();
                 return;
             }
-            MessageBox.Show(String.Format("username: {0}, tour_code: {1}", username, tour_code));
+            //MessageBox.Show(String.Format("username: {0}, tour_code: {1}", username, tour_code));
+            DataRow user = Database.User.Select("tendangnhap='" + username + "'")[0];
+            DataRow tour = Database.Tour.Select("tour_code='" + tour_code + "'")[0];
+            if(Convert.ToInt32(user["money"])<Convert.ToInt32(tour["price"]))
+            {
+                MessageBox.Show("Your Acount Is Not Enough. Please Recharge!");
+                return;
+            }
+            if(Convert.ToInt32(user["nam"])<Convert.ToInt32(tour["minimum_age"]))
+            {
+                MessageBox.Show("You Are Not Old Enough To Join This Tour.");
+                return;
+            }
+            user["money"] = (Convert.ToInt32(user["money"]) - Convert.ToInt32(tour["price"])).ToString();
+            tour["curent_menber"] = (Convert.ToInt32(tour["curent_menber"]) + 1).ToString();
+            this.number.Text = String.Format("{0}/{1}", tour["curent_menber"], tour["group_size"]);
+            string ngay_join = DateTime.Now.ToString();
+            Database.History_tour.Rows.Add(username, ngay_join, tour_code);
+
         }
     }
 }
