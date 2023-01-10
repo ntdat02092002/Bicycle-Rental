@@ -61,6 +61,9 @@ namespace Bicycle_Rental
             this.number.Text = String.Format("{0}/{1}", tour["curent_menber"], tour["group_size"]);
             string ngay_join = DateTime.Now.ToString();
             Database.History_tour.Rows.Add(username, ngay_join, tour_code);
+            this.join_btn.Enabled = false;
+            this.join_btn.Text = "Joined";
+            MessageBox.Show("Join Tour Successfully!");
 
         }
     }

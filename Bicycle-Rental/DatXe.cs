@@ -56,7 +56,8 @@ namespace Bicycle_Rental
                 int gia = Convert.ToInt32( Database.Bicycle.Select("maxe='" + maxe + "'")[0]["giathue"].ToString());
                 if (left_money >= gia)
                 {
-                    Database.History.Rows.Add(username, maxe, ngaylay, ngaydat, ngaytra, 0);
+                    DataRow data_row = Database.Bicycle.Select(string.Format("maxe = '{0}'", maxe))[0];
+                    Database.History.Rows.Add(username, maxe, data_row[2].ToString(), ngaylay, ngaytra, ngaydat,  1, data_row[1].ToString());
                     this.Close();
                     Database.money += gia;
                     MessageBox.Show("Rent A Bike Successfully!");

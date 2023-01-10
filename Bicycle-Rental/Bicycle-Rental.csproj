@@ -139,6 +139,12 @@
     <Compile Include="Bicycle_For_rent.Designer.cs">
       <DependentUpon>Bicycle_For_rent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="DatXe.cs">
       <SubType>Form</SubType>
@@ -214,6 +220,12 @@
     <Compile Include="Inquiry.Designer.cs">
       <DependentUpon>Inquiry.cs</DependentUpon>
     </Compile>
+    <Compile Include="RecentRenting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecentRenting.Designer.cs">
+      <DependentUpon>RecentRenting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +271,9 @@
     <EmbeddedResource Include="Bicycle_For_rent.resx">
       <DependentUpon>Bicycle_For_rent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DatXe.resx">
       <DependentUpon>DatXe.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,6 +315,9 @@
     </Compile>
     <EmbeddedResource Include="Inquiry.resx">
       <DependentUpon>Inquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecentRenting.resx">
+      <DependentUpon>RecentRenting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>

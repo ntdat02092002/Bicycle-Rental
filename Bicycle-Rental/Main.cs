@@ -235,6 +235,7 @@ namespace Bicycle_Rental
             Admin_panel.Visible = false;
             User_panel.Visible = false;
             this.Home_button.PerformClick();
+            Database.CurentUser = "";
         }
 
         private void Profile_Admin_btn_Click(object sender, EventArgs e)
@@ -258,6 +259,12 @@ namespace Bicycle_Rental
         private void Tour_button_Click(object sender, EventArgs e)
         {
             Tour sub = new Tour(this);
+            this.Open_Sub_Form(sub);
+        }
+
+        private void Dashboard_admin_btn_Click(object sender, EventArgs e)
+        {
+            Dashboard sub = new Dashboard(this);
             this.Open_Sub_Form(sub);
         }
     }

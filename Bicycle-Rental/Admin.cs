@@ -104,7 +104,7 @@ namespace Bicycle_Rental
         {
             show_panel.Controls.Clear();
 
-            data.DataSource = Database.User;
+            data.DataSource = Database.History;
             show_panel.Controls.Add(data);
             data.Dock = DockStyle.Fill;
         }
