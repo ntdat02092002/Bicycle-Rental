@@ -111,5 +111,49 @@ namespace Bicycle_Rental
             if (flowLayoutPanel1.Controls.Count % 3 == 0)
                 flowLayoutPanel1.SetFlowBreak(e.Control as Control, true);
         }
+
+        private void Filter_Click(object sender, EventArgs e)
+        {
+            this.flowLayoutPanel1.Controls.Clear();
+            string loai="none";
+            string size = "none";
+            string color = "none";
+            string daily = "none";
+            string speed = "none";
+            if (Bike_radio.SelectedItem !=null)
+                loai = Bike_radio.SelectedItem.ToString().ToLower();
+            if (Size_radio.SelectedItem != null)
+                size = Size_radio.SelectedItem.ToString().ToLower();
+            if (Color_radio.SelectedItem != null)
+                color = Color_radio.SelectedItem.ToString().ToLower();
+            if (Deliver_radio.SelectedItem != null&&Deliver_radio.SelectedItem.ToString()!="None")
+                daily = Database.Agency.Select("tendaily='"+Deliver_radio.SelectedItem.ToString()+"'")[0]["madaily"].ToString();
+            if (Speed_radio.SelectedItem != null)
+                speed = Speed_radio.SelectedItem.ToString().ToLower();
+            IEnumerable<DataRow> rows = Database.Bicycle.AsEnumerable()
+                       .Where(r => (r.Field<string>("loai").ToLower() == loai|| loai=="none")
+                                && (r.Field<string>("kichthuoc").ToLower() == size|| size== "none")
+                                && (r.Field<string>("mausac").ToLower() == color|| color=="none")
+                                && (r.Field<string>("tocdo").ToLower()== speed|| speed =="none")
+                                && (r.Field<string>("madaily").ToLower()==daily|| daily=="none"));
+
+            if (loai == "none" && size == "none" && color == "none" && daily == "none" && speed == "none")
+            {
+                Bicycle_For_rent_Load(sender, e);
+                return;
+            }
+            string url = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\asset\Bicycle\";
+            foreach (DataRow dataRow in rows)
+            {
+                string pic_path = url + dataRow["tenxe"] +".jpg";
+                Bicycle bicycle = new Bicycle();
+                bicycle.GetTenXe = dataRow["tenxe"].ToString();
+                bicycle.GetGia = "$" + dataRow["giathue"].ToString();
+                bicycle.GetPicture = Image.FromFile(pic_path);
+                bicycle.GetDaiLy = Database.Agency.Select("madaily='"+dataRow["madaily"].ToString()+"'")[0]["tendaily"].ToString();
+                this.flowLayoutPanel1.Controls.Add(bicycle);
+            }
+
+        }
     }
 }

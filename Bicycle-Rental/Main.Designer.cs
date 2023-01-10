@@ -64,7 +64,6 @@
             this.Bike_Rental_inquiry = new Guna.UI2.WinForms.Guna2Button();
             this.General_Inquiry = new Guna.UI2.WinForms.Guna2Button();
             this.Tour_Inquiry = new Guna.UI2.WinForms.Guna2Button();
-            this.Sub_Form_panel = new System.Windows.Forms.Panel();
             this.User_panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.Logout_Button = new Guna.UI2.WinForms.Guna2Button();
             this.Dashboard_Button = new Guna.UI2.WinForms.Guna2Button();
@@ -74,6 +73,7 @@
             this.Admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Dashboard_admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Profile_Admin_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.Sub_Form_panel = new System.Windows.Forms.Panel();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -96,7 +96,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1182, 30);
+            this.guna2Panel1.Size = new System.Drawing.Size(1184, 30);
             this.guna2Panel1.TabIndex = 0;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -254,7 +254,7 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowDepth = 40;
             this.guna2ShadowPanel1.ShadowShift = 2;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1182, 74);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1184, 74);
             this.guna2ShadowPanel1.TabIndex = 1;
             // 
             // guna2TextBox1
@@ -396,7 +396,6 @@
             this.Tour_button.Size = new System.Drawing.Size(80, 30);
             this.Tour_button.TabIndex = 1;
             this.Tour_button.Text = "Tour";
-            this.Tour_button.Click += new System.EventHandler(this.Tour_button_Click);
             // 
             // Home_button
             // 
@@ -944,14 +943,6 @@
             this.Tour_Inquiry.Click += new System.EventHandler(this.Tour_Inquiry_Click);
             this.Tour_Inquiry.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
             // 
-            // Sub_Form_panel
-            // 
-            this.Sub_Form_panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Sub_Form_panel.Location = new System.Drawing.Point(0, 97);
-            this.Sub_Form_panel.Name = "Sub_Form_panel";
-            this.Sub_Form_panel.Size = new System.Drawing.Size(1182, 511);
-            this.Sub_Form_panel.TabIndex = 5;
-            // 
             // User_panel
             // 
             this.User_panel.BackColor = System.Drawing.Color.Transparent;
@@ -1160,12 +1151,23 @@
             this.Profile_Admin_btn.Click += new System.EventHandler(this.Profile_Admin_btn_Click);
             this.Profile_Admin_btn.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);
             // 
+            // Sub_Form_panel
+            // 
+            this.Sub_Form_panel.BackColor = System.Drawing.Color.Transparent;
+            this.Sub_Form_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Sub_Form_panel.Location = new System.Drawing.Point(0, 104);
+            this.Sub_Form_panel.Name = "Sub_Form_panel";
+            this.Sub_Form_panel.Size = new System.Drawing.Size(1184, 512);
+            this.Sub_Form_panel.TabIndex = 5;
+            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1182, 608);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1184, 616);
             this.Controls.Add(this.Admin_panel);
             this.Controls.Add(this.User_panel);
             this.Controls.Add(this.Contact_panel);
@@ -1215,13 +1217,13 @@
         private Guna.UI2.WinForms.Guna2Button Road_Bikes;
         private Guna.UI2.WinForms.Guna2Button Hybrid_Bicycles;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private Guna.UI2.WinForms.Guna2Button Login;
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2ShadowPanel Contact_panel;
         private Guna.UI2.WinForms.Guna2Button Tour_Inquiry;
-        private System.Windows.Forms.Panel Sub_Form_panel;
         private Guna.UI2.WinForms.Guna2Button Join_A_Group_Tour;
         private Guna.UI2.WinForms.Guna2Button Make_A_Payment;
         private Guna.UI2.WinForms.Guna2Button How_To_Book;
@@ -1238,7 +1240,7 @@
         private Guna.UI2.WinForms.Guna2Button Admin_btn;
         private Guna.UI2.WinForms.Guna2Button Dashboard_admin_btn;
         private Guna.UI2.WinForms.Guna2Button Profile_Admin_btn;
-        public Guna.UI2.WinForms.Guna2Button Login;
+        private System.Windows.Forms.Panel Sub_Form_panel;
     }
 }
 
