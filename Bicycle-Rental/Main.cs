@@ -235,6 +235,7 @@ namespace Bicycle_Rental
             Admin_panel.Visible = false;
             User_panel.Visible = false;
             this.Home_button.PerformClick();
+            Database.CurentUser = "";
         }
 
         private void Profile_Admin_btn_Click(object sender, EventArgs e)
