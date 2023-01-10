@@ -73,7 +73,7 @@ namespace Bicycle_Rental
             this.Add_to_cart_button.Name = "Add_to_cart_button";
             this.Add_to_cart_button.Size = new System.Drawing.Size(132, 38);
             this.Add_to_cart_button.TabIndex = 8;
-            this.Add_to_cart_button.Text = "Add To Cart";
+            this.Add_to_cart_button.Text = "Rent Now";
             this.Add_to_cart_button.Click += new System.EventHandler(this.Add_to_cart_button_Click);
             // 
             // TenXe

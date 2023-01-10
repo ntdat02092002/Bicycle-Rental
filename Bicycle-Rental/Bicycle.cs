@@ -12,6 +12,8 @@ namespace Bicycle_Rental
 {
     public partial class Bicycle : UserControl
     {
+        public string maxe = "";
+        Main main;
         public Bicycle()
         {
             InitializeComponent();
@@ -22,9 +24,16 @@ namespace Bicycle_Rental
 
         }
 
+        public Guna.UI2.WinForms.Guna2Button GetAdd_to_cart_button()
+        {
+            return this.Add_to_cart_button;
+        }
+
         private void Add_to_cart_button_Click(object sender, EventArgs e)
         {
-
+            DatXe datXe = new DatXe(this);
+            datXe.BringToFront();
+            datXe.Show();
         }
         public string GetTenXe
         {
@@ -45,6 +54,11 @@ namespace Bicycle_Rental
         {
             set { this.DaiLy.Text = value; }
             get { return this.DaiLy.Text; }
+        }
+        public string GetMaxe
+        {
+            set { this.maxe = value; }
+            get { return this.maxe; }
         }
     }
 }
