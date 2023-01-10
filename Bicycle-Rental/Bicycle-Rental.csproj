@@ -139,6 +139,12 @@
     <Compile Include="Bicycle_For_rent.Designer.cs">
       <DependentUpon>Bicycle_For_rent.cs</DependentUpon>
     </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bicycle_For_rent.resx">
       <DependentUpon>Bicycle_For_rent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

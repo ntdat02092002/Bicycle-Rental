@@ -865,8 +865,9 @@
             this.Dashboard_Button.Name = "Dashboard_Button";
             this.Dashboard_Button.Size = new System.Drawing.Size(120, 30);
             this.Dashboard_Button.TabIndex = 9;
-            this.Dashboard_Button.Text = "Dashboard";
+            this.Dashboard_Button.Text = "History";
             this.Dashboard_Button.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Dashboard_Button.Click += new System.EventHandler(this.Dashboard_admin_btn_Click);
             this.Dashboard_Button.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);
             // 
             // Profile_Button
@@ -982,8 +983,9 @@
             this.Dashboard_admin_btn.Name = "Dashboard_admin_btn";
             this.Dashboard_admin_btn.Size = new System.Drawing.Size(120, 30);
             this.Dashboard_admin_btn.TabIndex = 9;
-            this.Dashboard_admin_btn.Text = "Dashboard";
+            this.Dashboard_admin_btn.Text = "History";
             this.Dashboard_admin_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Dashboard_admin_btn.Click += new System.EventHandler(this.Dashboard_admin_btn_Click);
             this.Dashboard_admin_btn.MouseLeave += new System.EventHandler(this.User_panel_MouseLeave);
             // 
             // Profile_Admin_btn
