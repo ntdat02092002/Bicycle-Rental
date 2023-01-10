@@ -18,8 +18,12 @@ namespace Bicycle_Rental
 
         public static DataTable Tour { get; set; }
 
+        public static DataTable History { get; set; }
+
+        public static string CurentUser { get; set; }
         public static void KhoiTao()
         {
+            CurentUser = "";
             asset_path = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\asset\";
 
             string[] cols_bicycle = { "maxe", "tenxe", "loai", "giathue", "madaily", "desciption", "dathue", "mausac", "kichthuoc", "tocdo" };
@@ -27,6 +31,9 @@ namespace Bicycle_Rental
 
             string[] cols_user = { "tendangnhap", "matkhau", "ten", "avatar", "gioitinh", "ngay", "thang", "nam", "email", "sdt", "admin" };
             User = ExcelToDataTable(asset_path + "user.xlsx", cols_user);
+
+            string[] cols_history = { "username", "maxe", "ngaylay", "ngaytra", "ngaydat", "loaixe" };
+            History = ExcelToDataTable(asset_path + "History.xlsx", cols_history);
 
             string[] cols_agency = { "madaily", "tendaily", "diachi", "tinh", "sdt", "latitude", "longitude" };
             Agency = ExcelToDataTable(asset_path + "agency.xlsx", cols_agency);
