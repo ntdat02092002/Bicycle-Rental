@@ -138,9 +138,11 @@ namespace Bicycle_Rental
 
         public void Open_Sub_Form(Form sub)
         {
+            string url = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\asset\logo\Background.jpg";
             sub.TopLevel = false;
             sub.Dock = DockStyle.Fill;//Set the subform as a control
-
+            sub.BackgroundImage = Image.FromFile(url);
+            sub.BackgroundImageLayout = ImageLayout.Stretch;
             sub.FormBorderStyle = FormBorderStyle.None;
             Sub_Form_panel.Controls.Add(sub);
             sub.Show();
