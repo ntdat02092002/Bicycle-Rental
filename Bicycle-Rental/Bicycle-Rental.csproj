@@ -220,6 +220,24 @@
     <Compile Include="TermsAndConditions.Designer.cs">
       <DependentUpon>TermsAndConditions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour.Designer.cs">
+      <DependentUpon>Tour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TourItem.Designer.cs">
+      <DependentUpon>TourItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourMap.Designer.cs">
+      <DependentUpon>TourMap.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,6 +297,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TermsAndConditions.resx">
       <DependentUpon>TermsAndConditions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour.resx">
+      <DependentUpon>Tour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourItem.resx">
+      <DependentUpon>TourItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourMap.resx">
+      <DependentUpon>TourMap.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

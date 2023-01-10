@@ -96,7 +96,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1184, 30);
+            this.guna2Panel1.Size = new System.Drawing.Size(1182, 30);
             this.guna2Panel1.TabIndex = 0;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -254,7 +254,7 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowDepth = 40;
             this.guna2ShadowPanel1.ShadowShift = 2;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1184, 74);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1182, 74);
             this.guna2ShadowPanel1.TabIndex = 1;
             // 
             // guna2TextBox1
@@ -396,6 +396,7 @@
             this.Tour_button.Size = new System.Drawing.Size(80, 30);
             this.Tour_button.TabIndex = 1;
             this.Tour_button.Text = "Tour";
+            this.Tour_button.Click += new System.EventHandler(this.Tour_button_Click);
             // 
             // Home_button
             // 
@@ -946,9 +947,9 @@
             // Sub_Form_panel
             // 
             this.Sub_Form_panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Sub_Form_panel.Location = new System.Drawing.Point(0, 105);
+            this.Sub_Form_panel.Location = new System.Drawing.Point(0, 97);
             this.Sub_Form_panel.Name = "Sub_Form_panel";
-            this.Sub_Form_panel.Size = new System.Drawing.Size(1184, 511);
+            this.Sub_Form_panel.Size = new System.Drawing.Size(1182, 511);
             this.Sub_Form_panel.TabIndex = 5;
             // 
             // User_panel
@@ -1161,10 +1162,10 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1184, 616);
+            this.ClientSize = new System.Drawing.Size(1182, 608);
             this.Controls.Add(this.Admin_panel);
             this.Controls.Add(this.User_panel);
             this.Controls.Add(this.Contact_panel);
@@ -1214,7 +1215,6 @@
         private Guna.UI2.WinForms.Guna2Button Road_Bikes;
         private Guna.UI2.WinForms.Guna2Button Hybrid_Bicycles;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button Login;
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
@@ -1238,6 +1238,7 @@
         private Guna.UI2.WinForms.Guna2Button Admin_btn;
         private Guna.UI2.WinForms.Guna2Button Dashboard_admin_btn;
         private Guna.UI2.WinForms.Guna2Button Profile_Admin_btn;
+        public Guna.UI2.WinForms.Guna2Button Login;
     }
 }
 
