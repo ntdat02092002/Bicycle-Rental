@@ -138,11 +138,9 @@ namespace Bicycle_Rental
 
         public void Open_Sub_Form(Form sub)
         {
-            string url = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\asset\logo\Background.jpg";
             sub.TopLevel = false;
             sub.Dock = DockStyle.Fill;//Set the subform as a control
-            sub.BackgroundImage = Image.FromFile(url);
-            sub.BackgroundImageLayout = ImageLayout.Stretch;
+
             sub.FormBorderStyle = FormBorderStyle.None;
             Sub_Form_panel.Controls.Add(sub);
             sub.Show();
@@ -300,6 +298,12 @@ namespace Bicycle_Rental
         private void guna2Button7_Click(object sender, EventArgs e)
         {
             Agency sub = new Agency(this);
+            this.Open_Sub_Form(sub);
+        }
+
+        private void Tour_button_Click(object sender, EventArgs e)
+        {
+            Tour sub = new Tour(this);
             this.Open_Sub_Form(sub);
         }
     }
