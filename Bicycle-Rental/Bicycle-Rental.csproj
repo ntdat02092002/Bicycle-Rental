@@ -73,6 +73,8 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -94,6 +96,7 @@
       <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -103,6 +106,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs">
@@ -123,6 +127,18 @@
     <Compile Include="AgencyItem.Designer.cs">
       <DependentUpon>AgencyItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bicycle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bicycle.Designer.cs">
+      <DependentUpon>Bicycle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bicycle_For_rent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bicycle_For_rent.Designer.cs">
+      <DependentUpon>Bicycle_For_rent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -141,6 +157,12 @@
     </Compile>
     <Compile Include="LevelDiffculty.Designer.cs">
       <DependentUpon>LevelDiffculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadioButtonList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadioButtonList.Designer.cs">
+      <DependentUpon>RadioButtonList.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -198,6 +220,24 @@
     <Compile Include="TermsAndConditions.Designer.cs">
       <DependentUpon>TermsAndConditions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour.Designer.cs">
+      <DependentUpon>Tour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TourItem.Designer.cs">
+      <DependentUpon>TourItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourMap.Designer.cs">
+      <DependentUpon>TourMap.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +246,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgencyItem.resx">
       <DependentUpon>AgencyItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bicycle.resx">
+      <DependentUpon>Bicycle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bicycle_For_rent.resx">
+      <DependentUpon>Bicycle_For_rent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -251,6 +297,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TermsAndConditions.resx">
       <DependentUpon>TermsAndConditions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour.resx">
+      <DependentUpon>Tour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourItem.resx">
+      <DependentUpon>TourItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourMap.resx">
+      <DependentUpon>TourMap.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
