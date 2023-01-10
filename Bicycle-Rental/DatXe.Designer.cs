@@ -29,8 +29,6 @@ namespace Bicycle_Rental
         /// </summary>
         private void InitializeComponent()
         {
-            this.NgayDat = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.DaiLy = new System.Windows.Forms.Label();
             this.NgayLay = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.NgayTra = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -39,41 +37,13 @@ namespace Bicycle_Rental
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // NgayDat
-            // 
-            this.NgayDat.Checked = true;
-            this.NgayDat.FillColor = System.Drawing.Color.White;
-            this.NgayDat.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.NgayDat.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.NgayDat.Location = new System.Drawing.Point(368, 4);
-            this.NgayDat.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.NgayDat.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.NgayDat.Name = "NgayDat";
-            this.NgayDat.Size = new System.Drawing.Size(180, 36);
-            this.NgayDat.TabIndex = 1;
-            this.NgayDat.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.NgayDat.Value = new System.DateTime(2023, 1, 10, 21, 15, 2, 938);
-            this.NgayDat.ValueChanged += new System.EventHandler(this.NgayDat_ValueChanged);
-            // 
-            // DaiLy
-            // 
-            this.DaiLy.AutoSize = true;
-            this.DaiLy.BackColor = System.Drawing.Color.Transparent;
-            this.DaiLy.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DaiLy.ForeColor = System.Drawing.Color.Black;
-            this.DaiLy.Location = new System.Drawing.Point(303, 13);
-            this.DaiLy.Name = "DaiLy";
-            this.DaiLy.Size = new System.Drawing.Size(66, 17);
-            this.DaiLy.TabIndex = 10;
-            this.DaiLy.Text = "Book Day";
-            // 
             // NgayLay
             // 
             this.NgayLay.Checked = true;
             this.NgayLay.FillColor = System.Drawing.Color.White;
             this.NgayLay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.NgayLay.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.NgayLay.Location = new System.Drawing.Point(368, 48);
+            this.NgayLay.Location = new System.Drawing.Point(370, 2);
             this.NgayLay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.NgayLay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.NgayLay.Name = "NgayLay";
@@ -89,7 +59,7 @@ namespace Bicycle_Rental
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(303, 57);
+            this.label1.Location = new System.Drawing.Point(305, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 17);
             this.label1.TabIndex = 10;
@@ -101,7 +71,7 @@ namespace Bicycle_Rental
             this.NgayTra.FillColor = System.Drawing.Color.White;
             this.NgayTra.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.NgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.NgayTra.Location = new System.Drawing.Point(368, 93);
+            this.NgayTra.Location = new System.Drawing.Point(370, 47);
             this.NgayTra.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.NgayTra.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.NgayTra.Name = "NgayTra";
@@ -117,7 +87,7 @@ namespace Bicycle_Rental
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(304, 102);
+            this.label2.Location = new System.Drawing.Point(306, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 10;
@@ -146,7 +116,7 @@ namespace Bicycle_Rental
             this.Rent_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Rent_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Rent_button.ImageSize = new System.Drawing.Size(30, 30);
-            this.Rent_button.Location = new System.Drawing.Point(416, 135);
+            this.Rent_button.Location = new System.Drawing.Point(418, 89);
             this.Rent_button.Name = "Rent_button";
             this.Rent_button.Size = new System.Drawing.Size(132, 38);
             this.Rent_button.TabIndex = 11;
@@ -175,8 +145,6 @@ namespace Bicycle_Rental
             this.Controls.Add(this.NgayTra);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NgayLay);
-            this.Controls.Add(this.DaiLy);
-            this.Controls.Add(this.NgayDat);
             this.Name = "DatXe";
             this.Text = "DatXe";
             this.ResumeLayout(false);
@@ -185,8 +153,6 @@ namespace Bicycle_Rental
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2DateTimePicker NgayDat;
-        private System.Windows.Forms.Label DaiLy;
         private Guna.UI2.WinForms.Guna2DateTimePicker NgayLay;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DateTimePicker NgayTra;

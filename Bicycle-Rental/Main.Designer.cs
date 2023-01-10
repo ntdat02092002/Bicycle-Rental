@@ -31,18 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.Login = new Guna.UI2.WinForms.Guna2Button();
-            this.GioHang_button = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Bike_For_Rent = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.Contact_button = new Guna.UI2.WinForms.Guna2Button();
             this.Tour_button = new Guna.UI2.WinForms.Guna2Button();
             this.Home_button = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Bike_For_Rent = new Guna.UI2.WinForms.Guna2Button();
             this.Bicycle_tour_panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.Electric_Bikes = new Guna.UI2.WinForms.Guna2Button();
             this.Children_Bikes = new Guna.UI2.WinForms.Guna2Button();
@@ -82,7 +81,6 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Black;
             this.guna2Panel1.Controls.Add(this.Login);
-            this.guna2Panel1.Controls.Add(this.GioHang_button);
             this.guna2Panel1.Controls.Add(this.guna2Button10);
             this.guna2Panel1.Controls.Add(this.guna2Button9);
             this.guna2Panel1.Controls.Add(this.guna2Button8);
@@ -124,27 +122,6 @@
             this.Login.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Login.Click += new System.EventHandler(this.Login_Click);
             this.Login.MouseLeave += new System.EventHandler(this.Login_MouseLeave);
-            // 
-            // GioHang_button
-            // 
-            this.GioHang_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GioHang_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GioHang_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GioHang_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GioHang_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GioHang_button.FillColor = System.Drawing.Color.Transparent;
-            this.GioHang_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GioHang_button.ForeColor = System.Drawing.Color.White;
-            this.GioHang_button.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.GioHang_button.Image = ((System.Drawing.Image)(resources.GetObject("GioHang_button.Image")));
-            this.GioHang_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GioHang_button.ImageSize = new System.Drawing.Size(30, 30);
-            this.GioHang_button.Location = new System.Drawing.Point(909, 3);
-            this.GioHang_button.Name = "GioHang_button";
-            this.GioHang_button.Size = new System.Drawing.Size(150, 28);
-            this.GioHang_button.TabIndex = 1;
-            this.GioHang_button.Text = "0 item - 0 đ";
-            this.GioHang_button.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // guna2Button10
             // 
@@ -250,6 +227,29 @@
             this.guna2ShadowPanel1.ShadowShift = 2;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1184, 74);
             this.guna2ShadowPanel1.TabIndex = 1;
+            // 
+            // Bike_For_Rent
+            // 
+            this.Bike_For_Rent.BackColor = System.Drawing.Color.Transparent;
+            this.Bike_For_Rent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bike_For_Rent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Bike_For_Rent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Bike_For_Rent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Bike_For_Rent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Bike_For_Rent.FillColor = System.Drawing.Color.Transparent;
+            this.Bike_For_Rent.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bike_For_Rent.ForeColor = System.Drawing.Color.Black;
+            this.Bike_For_Rent.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Bike_For_Rent.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Bike_For_Rent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Bike_For_Rent.ImageSize = new System.Drawing.Size(30, 30);
+            this.Bike_For_Rent.Location = new System.Drawing.Point(483, 8);
+            this.Bike_For_Rent.Name = "Bike_For_Rent";
+            this.Bike_For_Rent.Size = new System.Drawing.Size(87, 50);
+            this.Bike_For_Rent.TabIndex = 8;
+            this.Bike_For_Rent.Text = "Bicycle";
+            this.Bike_For_Rent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Bike_For_Rent.Click += new System.EventHandler(this.bike_for_rent_btn_Click);
             // 
             // guna2TextBox1
             // 
@@ -401,29 +401,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // Bike_For_Rent
-            // 
-            this.Bike_For_Rent.BackColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Rent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bike_For_Rent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_For_Rent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Bike_For_Rent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Bike_For_Rent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Bike_For_Rent.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Rent.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bike_For_Rent.ForeColor = System.Drawing.Color.Black;
-            this.Bike_For_Rent.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Bike_For_Rent.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Bike_For_Rent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Bike_For_Rent.ImageSize = new System.Drawing.Size(30, 30);
-            this.Bike_For_Rent.Location = new System.Drawing.Point(483, 8);
-            this.Bike_For_Rent.Name = "Bike_For_Rent";
-            this.Bike_For_Rent.Size = new System.Drawing.Size(87, 50);
-            this.Bike_For_Rent.TabIndex = 8;
-            this.Bike_For_Rent.Text = "Bicycle";
-            this.Bike_For_Rent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Bike_For_Rent.Click += new System.EventHandler(this.bike_for_rent_btn_Click);
             // 
             // Bicycle_tour_panel
             // 
@@ -1025,7 +1002,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1184, 616);
             this.Controls.Add(this.Admin_panel);
@@ -1057,7 +1033,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2Button GioHang_button;
         private Guna.UI2.WinForms.Guna2Button Home_button;
         private Guna.UI2.WinForms.Guna2Button Contact_button;
         private Guna.UI2.WinForms.Guna2Button Tour_button;
