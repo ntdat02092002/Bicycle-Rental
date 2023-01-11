@@ -53,7 +53,6 @@
             this.Join_A_Group_Tour = new Guna.UI2.WinForms.Guna2Button();
             this.Make_A_Payment = new Guna.UI2.WinForms.Guna2Button();
             this.How_To_Book = new Guna.UI2.WinForms.Guna2Button();
-            this.FAQ = new Guna.UI2.WinForms.Guna2Button();
             this.Lever_Of_Diffculty = new Guna.UI2.WinForms.Guna2Button();
             this.Bike_Rental_inquiry = new Guna.UI2.WinForms.Guna2Button();
             this.General_Inquiry = new Guna.UI2.WinForms.Guna2Button();
@@ -565,7 +564,6 @@
             this.Contact_panel.Controls.Add(this.Join_A_Group_Tour);
             this.Contact_panel.Controls.Add(this.Make_A_Payment);
             this.Contact_panel.Controls.Add(this.How_To_Book);
-            this.Contact_panel.Controls.Add(this.FAQ);
             this.Contact_panel.Controls.Add(this.Lever_Of_Diffculty);
             this.Contact_panel.Controls.Add(this.Bike_Rental_inquiry);
             this.Contact_panel.Controls.Add(this.General_Inquiry);
@@ -576,7 +574,7 @@
             this.Contact_panel.Name = "Contact_panel";
             this.Contact_panel.ShadowColor = System.Drawing.Color.Black;
             this.Contact_panel.ShadowShift = 3;
-            this.Contact_panel.Size = new System.Drawing.Size(169, 253);
+            this.Contact_panel.Size = new System.Drawing.Size(169, 225);
             this.Contact_panel.TabIndex = 4;
             this.Contact_panel.Visible = false;
             this.Contact_panel.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
@@ -597,7 +595,7 @@
             this.Join_A_Group_Tour.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Join_A_Group_Tour.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Join_A_Group_Tour.ImageSize = new System.Drawing.Size(30, 30);
-            this.Join_A_Group_Tour.Location = new System.Drawing.Point(0, 216);
+            this.Join_A_Group_Tour.Location = new System.Drawing.Point(0, 186);
             this.Join_A_Group_Tour.Name = "Join_A_Group_Tour";
             this.Join_A_Group_Tour.Size = new System.Drawing.Size(169, 30);
             this.Join_A_Group_Tour.TabIndex = 19;
@@ -622,7 +620,7 @@
             this.Make_A_Payment.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Make_A_Payment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Make_A_Payment.ImageSize = new System.Drawing.Size(30, 30);
-            this.Make_A_Payment.Location = new System.Drawing.Point(0, 186);
+            this.Make_A_Payment.Location = new System.Drawing.Point(0, 156);
             this.Make_A_Payment.Name = "Make_A_Payment";
             this.Make_A_Payment.Size = new System.Drawing.Size(169, 30);
             this.Make_A_Payment.TabIndex = 18;
@@ -647,7 +645,7 @@
             this.How_To_Book.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.How_To_Book.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.How_To_Book.ImageSize = new System.Drawing.Size(30, 30);
-            this.How_To_Book.Location = new System.Drawing.Point(0, 156);
+            this.How_To_Book.Location = new System.Drawing.Point(0, 126);
             this.How_To_Book.Name = "How_To_Book";
             this.How_To_Book.Size = new System.Drawing.Size(169, 30);
             this.How_To_Book.TabIndex = 17;
@@ -655,30 +653,6 @@
             this.How_To_Book.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.How_To_Book.Click += new System.EventHandler(this.How_To_Book_Click);
             this.How_To_Book.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
-            // 
-            // FAQ
-            // 
-            this.FAQ.BackColor = System.Drawing.Color.Transparent;
-            this.FAQ.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FAQ.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.FAQ.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.FAQ.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.FAQ.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.FAQ.Dock = System.Windows.Forms.DockStyle.Top;
-            this.FAQ.FillColor = System.Drawing.Color.Transparent;
-            this.FAQ.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FAQ.ForeColor = System.Drawing.Color.Black;
-            this.FAQ.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.FAQ.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.FAQ.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.FAQ.ImageSize = new System.Drawing.Size(30, 30);
-            this.FAQ.Location = new System.Drawing.Point(0, 126);
-            this.FAQ.Name = "FAQ";
-            this.FAQ.Size = new System.Drawing.Size(169, 30);
-            this.FAQ.TabIndex = 16;
-            this.FAQ.Text = "FAQ";
-            this.FAQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.FAQ.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
             // 
             // Lever_Of_Diffculty
             // 
@@ -1056,7 +1030,6 @@
         private Guna.UI2.WinForms.Guna2Button Join_A_Group_Tour;
         private Guna.UI2.WinForms.Guna2Button Make_A_Payment;
         private Guna.UI2.WinForms.Guna2Button How_To_Book;
-        private Guna.UI2.WinForms.Guna2Button FAQ;
         private Guna.UI2.WinForms.Guna2Button Lever_Of_Diffculty;
         private Guna.UI2.WinForms.Guna2Button Bike_Rental_inquiry;
         private Guna.UI2.WinForms.Guna2Button General_Inquiry;
