@@ -68,7 +68,7 @@ namespace Bicycle_Rental
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1252, 101);
+            this.panel1.Size = new System.Drawing.Size(1353, 101);
             this.panel1.TabIndex = 7;
             // 
             // Deliver_button
@@ -346,7 +346,7 @@ namespace Bicycle_Rental
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1269, 384);
+            this.ClientSize = new System.Drawing.Size(1370, 384);
             this.Controls.Add(this.Bike_radio);
             this.Controls.Add(this.Color_radio);
             this.Controls.Add(this.Deliver_radio);

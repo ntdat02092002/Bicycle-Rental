@@ -30,6 +30,23 @@ namespace Bicycle_Rental
         {
             return this.Money;
         }
+        public string money
+        {
+            get { return this.Money.Text.ToString(); }
+            set
+            {
+                if (Database.CurentUser != "")
+                {
+                    DataRow[] dr = Database.User.Select("tendangnhap = '" + Database.CurentUser + "'");
+                    this.Money.Text = "$" + dr[0]["money"].ToString();
+                    MessageBox.Show(dr[0]["money"].ToString());
+                }
+                else
+                {
+                    this.Money.Text = "$ 0";
+                }
+            }
+        }
         private void bike_for_tour_btn_MouseHover(object sender, EventArgs e)
         {
             Bicycle_tour_panel.BringToFront();
@@ -277,6 +294,22 @@ namespace Bicycle_Rental
             Money money = new Money();
             money.BringToFront();
             money.Show();
+        }
+
+        private void Main_Activated(object sender, EventArgs e)
+        {
+ 
+
+        }
+
+        private void Main_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Main_MouseMove(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }

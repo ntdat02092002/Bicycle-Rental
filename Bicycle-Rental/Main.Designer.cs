@@ -32,11 +32,11 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.Login = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.Money = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.Bike_For_Rent = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.Contact_button = new Guna.UI2.WinForms.Guna2Button();
             this.Tour_button = new Guna.UI2.WinForms.Guna2Button();
@@ -67,7 +67,6 @@
             this.Dashboard_admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Profile_Admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Sub_Form_panel = new System.Windows.Forms.Panel();
-            this.Money = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -153,6 +152,34 @@
             this.guna2Button10.Text = "Đường Hàn Thuyên, khu phố 6 P, Thủ Đức, Thành phố Hồ Chí Minh";
             this.guna2Button10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // Money
+            // 
+            this.Money.BackColor = System.Drawing.Color.Transparent;
+            this.Money.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.Money.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.Money.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.Money.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Money.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Money.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Money.DefaultAutoSize = true;
+            this.Money.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Money.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Money.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Money.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Money.FillColor = System.Drawing.Color.Transparent;
+            this.Money.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Money.ForeColor = System.Drawing.Color.White;
+            this.Money.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Money.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Money.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Money.ImageSize = new System.Drawing.Size(30, 30);
+            this.Money.Location = new System.Drawing.Point(909, -2);
+            this.Money.Name = "Money";
+            this.Money.Size = new System.Drawing.Size(124, 33);
+            this.Money.TabIndex = 1;
+            this.Money.Text = "Charge Now";
+            this.Money.Click += new System.EventHandler(this.Money_Click);
+            // 
             // guna2Button9
             // 
             this.guna2Button9.BackColor = System.Drawing.Color.Transparent;
@@ -213,7 +240,6 @@
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.guna2ShadowPanel1.Controls.Add(this.Bike_For_Rent);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2TextBox1);
             this.guna2ShadowPanel1.Controls.Add(this.guna2Button7);
             this.guna2ShadowPanel1.Controls.Add(this.Contact_button);
             this.guna2ShadowPanel1.Controls.Add(this.Tour_button);
@@ -252,31 +278,6 @@
             this.Bike_For_Rent.Text = "Bicycle";
             this.Bike_For_Rent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Bike_For_Rent.Click += new System.EventHandler(this.bike_for_rent_btn_Click);
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderRadius = 15;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconLeft")));
-            this.guna2TextBox1.Location = new System.Drawing.Point(846, 18);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = " Search";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(296, 30);
-            this.guna2TextBox1.TabIndex = 2;
             // 
             // guna2Button7
             // 
@@ -976,34 +977,6 @@
             this.Sub_Form_panel.Size = new System.Drawing.Size(1184, 512);
             this.Sub_Form_panel.TabIndex = 5;
             // 
-            // Money
-            // 
-            this.Money.BackColor = System.Drawing.Color.Transparent;
-            this.Money.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.Money.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.Money.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.Money.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Money.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Money.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Money.DefaultAutoSize = true;
-            this.Money.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Money.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Money.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Money.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Money.FillColor = System.Drawing.Color.Transparent;
-            this.Money.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Money.ForeColor = System.Drawing.Color.White;
-            this.Money.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.Money.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Money.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Money.ImageSize = new System.Drawing.Size(30, 30);
-            this.Money.Location = new System.Drawing.Point(964, 1);
-            this.Money.Name = "Money";
-            this.Money.Size = new System.Drawing.Size(54, 33);
-            this.Money.TabIndex = 1;
-            this.Money.Text = "$ 0";
-            this.Money.Click += new System.EventHandler(this.Money_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1023,7 +996,10 @@
             this.MaximumSize = new System.Drawing.Size(1200, 655);
             this.MinimumSize = new System.Drawing.Size(1200, 655);
             this.Name = "Main";
+            this.Activated += new System.EventHandler(this.Main_Activated);
             this.Load += new System.EventHandler(this.Main_Load);
+            this.Leave += new System.EventHandler(this.Main_Leave);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Main_MouseMove);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2ShadowPanel1.ResumeLayout(false);
@@ -1056,7 +1032,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2ShadowPanel Contact_panel;
         private Guna.UI2.WinForms.Guna2Button Tour_Inquiry;
         private Guna.UI2.WinForms.Guna2Button Join_A_Group_Tour;
