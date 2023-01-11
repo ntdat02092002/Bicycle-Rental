@@ -37,11 +37,11 @@ namespace Bicycle_Rental
             this.Size_button = new Guna.UI2.WinForms.Guna2Button();
             this.Color_button = new Guna.UI2.WinForms.Guna2Button();
             this.Bike_button = new Guna.UI2.WinForms.Guna2Button();
-            this.Speed_radio = new RadioButtonList();
             this.Bike_radio = new RadioButtonList();
-            this.Size_radio = new RadioButtonList();
-            this.Deliver_radio = new RadioButtonList();
             this.Color_radio = new RadioButtonList();
+            this.Deliver_radio = new RadioButtonList();
+            this.Size_radio = new RadioButtonList();
+            this.Speed_radio = new RadioButtonList();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +68,7 @@ namespace Bicycle_Rental
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1167, 101);
+            this.panel1.Size = new System.Drawing.Size(1252, 101);
             this.panel1.TabIndex = 7;
             // 
             // Deliver_button
@@ -241,23 +241,6 @@ namespace Bicycle_Rental
             this.Bike_button.Text = "Bike";
             this.Bike_button.Click += new System.EventHandler(this.Bike_button_Click);
             // 
-            // Speed_radio
-            // 
-            this.Speed_radio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Speed_radio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Speed_radio.FormattingEnabled = true;
-            this.Speed_radio.Items.AddRange(new object[] {
-            "None",
-            "24 Speed Bike",
-            "27 Speed Bike"});
-            this.Speed_radio.Location = new System.Drawing.Point(759, 39);
-            this.Speed_radio.Margin = new System.Windows.Forms.Padding(2);
-            this.Speed_radio.Name = "Speed_radio";
-            this.Speed_radio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Speed_radio.Size = new System.Drawing.Size(213, 62);
-            this.Speed_radio.TabIndex = 14;
-            this.Speed_radio.Visible = false;
-            // 
             // Bike_radio
             // 
             this.Bike_radio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -276,48 +259,6 @@ namespace Bicycle_Rental
             this.Bike_radio.Size = new System.Drawing.Size(213, 102);
             this.Bike_radio.TabIndex = 16;
             this.Bike_radio.Visible = false;
-            // 
-            // Size_radio
-            // 
-            this.Size_radio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Size_radio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Size_radio.FormattingEnabled = true;
-            this.Size_radio.Items.AddRange(new object[] {
-            "None",
-            "Kids",
-            "S",
-            "M",
-            "L",
-            "X",
-            "XL"});
-            this.Size_radio.Location = new System.Drawing.Point(474, 41);
-            this.Size_radio.Margin = new System.Windows.Forms.Padding(2);
-            this.Size_radio.Name = "Size_radio";
-            this.Size_radio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Size_radio.Size = new System.Drawing.Size(213, 142);
-            this.Size_radio.TabIndex = 15;
-            this.Size_radio.Visible = false;
-            // 
-            // Deliver_radio
-            // 
-            this.Deliver_radio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Deliver_radio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deliver_radio.FormattingEnabled = true;
-            this.Deliver_radio.Items.AddRange(new object[] {
-            "None",
-            "Đại lý ĐHQG - Hồ Chí Minh",
-            "Đại lý ĐHQG - Hà Nội",
-            "Đại lý chùa Thiên Mụ",
-            "Đại lý cầu Rồng",
-            "Đại lý dinh Độc Lập",
-            "Đại lý Tao Đàn"});
-            this.Deliver_radio.Location = new System.Drawing.Point(474, 85);
-            this.Deliver_radio.Margin = new System.Windows.Forms.Padding(2);
-            this.Deliver_radio.Name = "Deliver_radio";
-            this.Deliver_radio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Deliver_radio.Size = new System.Drawing.Size(213, 142);
-            this.Deliver_radio.TabIndex = 13;
-            this.Deliver_radio.Visible = false;
             // 
             // Color_radio
             // 
@@ -340,13 +281,72 @@ namespace Bicycle_Rental
             this.Color_radio.TabIndex = 0;
             this.Color_radio.Visible = false;
             // 
+            // Deliver_radio
+            // 
+            this.Deliver_radio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Deliver_radio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Deliver_radio.FormattingEnabled = true;
+            this.Deliver_radio.Items.AddRange(new object[] {
+            "None",
+            "Đại lý ĐHQG - Hồ Chí Minh",
+            "Đại lý ĐHQG - Hà Nội",
+            "Đại lý chùa Thiên Mụ",
+            "Đại lý cầu Rồng",
+            "Đại lý dinh Độc Lập",
+            "Đại lý Tao Đàn"});
+            this.Deliver_radio.Location = new System.Drawing.Point(474, 85);
+            this.Deliver_radio.Margin = new System.Windows.Forms.Padding(2);
+            this.Deliver_radio.Name = "Deliver_radio";
+            this.Deliver_radio.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Deliver_radio.Size = new System.Drawing.Size(213, 142);
+            this.Deliver_radio.TabIndex = 13;
+            this.Deliver_radio.Visible = false;
+            // 
+            // Size_radio
+            // 
+            this.Size_radio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Size_radio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Size_radio.FormattingEnabled = true;
+            this.Size_radio.Items.AddRange(new object[] {
+            "None",
+            "Kids",
+            "S",
+            "M",
+            "L",
+            "X",
+            "XL"});
+            this.Size_radio.Location = new System.Drawing.Point(474, 41);
+            this.Size_radio.Margin = new System.Windows.Forms.Padding(2);
+            this.Size_radio.Name = "Size_radio";
+            this.Size_radio.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Size_radio.Size = new System.Drawing.Size(213, 142);
+            this.Size_radio.TabIndex = 15;
+            this.Size_radio.Visible = false;
+            // 
+            // Speed_radio
+            // 
+            this.Speed_radio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Speed_radio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Speed_radio.FormattingEnabled = true;
+            this.Speed_radio.Items.AddRange(new object[] {
+            "None",
+            "24 Speed Bike",
+            "27 Speed Bike"});
+            this.Speed_radio.Location = new System.Drawing.Point(759, 39);
+            this.Speed_radio.Margin = new System.Windows.Forms.Padding(2);
+            this.Speed_radio.Name = "Speed_radio";
+            this.Speed_radio.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Speed_radio.Size = new System.Drawing.Size(213, 62);
+            this.Speed_radio.TabIndex = 14;
+            this.Speed_radio.Visible = false;
+            // 
             // Bicycle_For_rent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1184, 384);
+            this.ClientSize = new System.Drawing.Size(1269, 384);
             this.Controls.Add(this.Bike_radio);
             this.Controls.Add(this.Color_radio);
             this.Controls.Add(this.Deliver_radio);

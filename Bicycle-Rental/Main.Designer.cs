@@ -67,6 +67,7 @@
             this.Dashboard_admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Profile_Admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Sub_Form_panel = new System.Windows.Forms.Panel();
+            this.Money = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,6 +82,7 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.Black;
             this.guna2Panel1.Controls.Add(this.Login);
             this.guna2Panel1.Controls.Add(this.guna2Button10);
+            this.guna2Panel1.Controls.Add(this.Money);
             this.guna2Panel1.Controls.Add(this.guna2Button9);
             this.guna2Panel1.Controls.Add(this.guna2Button8);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -100,6 +102,7 @@
             this.Login.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Login.DefaultAutoSize = true;
             this.Login.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Login.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Login.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -115,7 +118,7 @@
             this.Login.ImageSize = new System.Drawing.Size(30, 28);
             this.Login.Location = new System.Drawing.Point(1063, 0);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(101, 30);
+            this.Login.Size = new System.Drawing.Size(103, 33);
             this.Login.TabIndex = 1;
             this.Login.Text = "Login";
             this.Login.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -973,6 +976,34 @@
             this.Sub_Form_panel.Size = new System.Drawing.Size(1184, 512);
             this.Sub_Form_panel.TabIndex = 5;
             // 
+            // Money
+            // 
+            this.Money.BackColor = System.Drawing.Color.Transparent;
+            this.Money.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.Money.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.Money.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.Money.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Money.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Money.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Money.DefaultAutoSize = true;
+            this.Money.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Money.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Money.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Money.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Money.FillColor = System.Drawing.Color.Transparent;
+            this.Money.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Money.ForeColor = System.Drawing.Color.White;
+            this.Money.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.Money.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Money.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Money.ImageSize = new System.Drawing.Size(30, 30);
+            this.Money.Location = new System.Drawing.Point(964, 1);
+            this.Money.Name = "Money";
+            this.Money.Size = new System.Drawing.Size(54, 33);
+            this.Money.TabIndex = 1;
+            this.Money.Text = "$ 0";
+            this.Money.Click += new System.EventHandler(this.Money_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -994,6 +1025,7 @@
             this.Name = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.guna2ShadowPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Bicycle_tour_panel.ResumeLayout(false);
@@ -1044,6 +1076,7 @@
         private Guna.UI2.WinForms.Guna2Button Profile_Admin_btn;
         private System.Windows.Forms.Panel Sub_Form_panel;
         public Guna.UI2.WinForms.Guna2Button Login;
+        private Guna.UI2.WinForms.Guna2Button Money;
     }
 }
 
