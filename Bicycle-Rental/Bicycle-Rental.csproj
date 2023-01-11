@@ -276,6 +276,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResestPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResestPassword.Designer.cs">
+      <DependentUpon>ResestPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="TermsAndConditions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -368,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResestPassword.resx">
+      <DependentUpon>ResestPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TermsAndConditions.resx">
       <DependentUpon>TermsAndConditions.cs</DependentUpon>

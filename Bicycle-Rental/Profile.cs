@@ -67,7 +67,6 @@ namespace Bicycle_Rental
                 is_edit = false;
 
                 txt_name.Enabled = false;
-                txt_mail.Enabled = false;
                 txt_phone.Enabled = false;
                 cb_day.Enabled = false;
                 cb_gender.Enabled = false;
@@ -90,7 +89,6 @@ namespace Bicycle_Rental
                 is_edit = true;
 
                 txt_name.Enabled = true;
-                txt_mail.Enabled = true;
                 txt_phone.Enabled = true;
                 cb_day.Enabled = true;
                 cb_gender.Enabled = true;
