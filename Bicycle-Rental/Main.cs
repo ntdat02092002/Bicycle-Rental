@@ -26,6 +26,10 @@ namespace Bicycle_Rental
         private bool MouseIsOverControl(Control control) =>
            control.ClientRectangle.Contains(control.PointToClient(Cursor.Position));
 
+        public GunaControl.Guna2Button GetMoney_Button()
+        {
+            return this.Money;
+        }
         private void bike_for_tour_btn_MouseHover(object sender, EventArgs e)
         {
             Bicycle_tour_panel.BringToFront();
@@ -266,6 +270,13 @@ namespace Bicycle_Rental
         {
             Dashboard sub = new Dashboard(this);
             this.Open_Sub_Form(sub);
+        }
+
+        private void Money_Click(object sender, EventArgs e)
+        {
+            Money money = new Money();
+            money.BringToFront();
+            money.Show();
         }
     }
 }
