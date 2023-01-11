@@ -13,6 +13,7 @@ namespace Bicycle_Rental
     public partial class DatXe : Form
     {
         Bicycle bicycle1 = new Bicycle();
+        int total;
         public DatXe(Bicycle bicycle)
         {
 
@@ -28,11 +29,20 @@ namespace Bicycle_Rental
             bicycle1.AutoSize = true;
             this.panel1.AutoSize = true;
             this.AutoSize = true;
+
+            int gia = Convert.ToInt32(Database.Bicycle.Select("maxe='" + bicycle1.GetMaxe.ToString() + "'")[0]["giathue"].ToString());
+            this.price.Text = String.Format("{0}$/day", gia);
+            this.total_price.Text = "Total: 0$";
         }
 
         private void NgayDat_ValueChanged(object sender, EventArgs e)
         {
-
+            DateTime ngaylay = this.NgayLay.Value;
+            DateTime ngaytra = this.NgayTra.Value;
+            int gia = Convert.ToInt32(Database.Bicycle.Select("maxe='" + bicycle1.GetMaxe.ToString() + "'")[0]["giathue"].ToString());
+            int total_day = int.Parse((ngaytra - ngaylay).TotalDays.ToString());
+            total = gia * total_day;
+            this.total_price.Text = String.Format("Total: {0}$", total);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -53,7 +63,7 @@ namespace Bicycle_Rental
                 string ngaytra = this.NgayTra.Value.ToString();
                 DataRow User = Database.User.Select("tendangnhap='" + username + "'")[0];
                 int left_money = Convert.ToInt32(User["money"].ToString());
-                int gia = Convert.ToInt32( Database.Bicycle.Select("maxe='" + maxe + "'")[0]["giathue"].ToString());
+                int gia = total;
                 if (left_money >= gia)
                 {
                     DataRow data_row = Database.Bicycle.Select(string.Format("maxe = '{0}'", maxe))[0];

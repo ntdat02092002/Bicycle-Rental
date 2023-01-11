@@ -35,6 +35,8 @@ namespace Bicycle_Rental
             this.label2 = new System.Windows.Forms.Label();
             this.Rent_button = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.price = new System.Windows.Forms.Label();
+            this.total_price = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // NgayLay
@@ -51,7 +53,6 @@ namespace Bicycle_Rental
             this.NgayLay.TabIndex = 1;
             this.NgayLay.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.NgayLay.Value = new System.DateTime(2023, 1, 10, 21, 15, 2, 938);
-            this.NgayLay.ValueChanged += new System.EventHandler(this.NgayDat_ValueChanged);
             // 
             // label1
             // 
@@ -116,7 +117,7 @@ namespace Bicycle_Rental
             this.Rent_button.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Rent_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Rent_button.ImageSize = new System.Drawing.Size(30, 30);
-            this.Rent_button.Location = new System.Drawing.Point(418, 89);
+            this.Rent_button.Location = new System.Drawing.Point(418, 157);
             this.Rent_button.Name = "Rent_button";
             this.Rent_button.Size = new System.Drawing.Size(132, 38);
             this.Rent_button.TabIndex = 11;
@@ -132,6 +133,30 @@ namespace Bicycle_Rental
             this.panel1.Size = new System.Drawing.Size(279, 279);
             this.panel1.TabIndex = 12;
             // 
+            // price
+            // 
+            this.price.AutoSize = true;
+            this.price.BackColor = System.Drawing.Color.Transparent;
+            this.price.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price.ForeColor = System.Drawing.Color.Black;
+            this.price.Location = new System.Drawing.Point(444, 88);
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(83, 25);
+            this.price.TabIndex = 13;
+            this.price.Text = "End Day";
+            // 
+            // total_price
+            // 
+            this.total_price.AutoSize = true;
+            this.total_price.BackColor = System.Drawing.Color.Transparent;
+            this.total_price.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_price.ForeColor = System.Drawing.Color.Black;
+            this.total_price.Location = new System.Drawing.Point(444, 120);
+            this.total_price.Name = "total_price";
+            this.total_price.Size = new System.Drawing.Size(83, 25);
+            this.total_price.TabIndex = 14;
+            this.total_price.Text = "End Day";
+            // 
             // DatXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -139,6 +164,8 @@ namespace Bicycle_Rental
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(550, 279);
+            this.Controls.Add(this.total_price);
+            this.Controls.Add(this.price);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Rent_button);
             this.Controls.Add(this.label2);
@@ -159,5 +186,7 @@ namespace Bicycle_Rental
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button Rent_button;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label price;
+        private System.Windows.Forms.Label total_price;
     }
 }
