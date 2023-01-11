@@ -53,6 +53,7 @@ namespace Bicycle_Rental
             string pass = txt_password.Text;
             string name = txt_name.Text;
             string re_pass = txt_re_password.Text;
+            string mail = txt_mail.Text;
             DataRow[] dr = Database.User.Select("tendangnhap = '" + user_name + "'");
             if (dr.Length != 0)
             {
@@ -69,7 +70,7 @@ namespace Bicycle_Rental
                 return;
             }
 
-            Database.User.Rows.Add(user_name, pass, name, "", "Nam", "", "", "", "", "", "0", "0");
+            Database.User.Rows.Add(user_name, pass, name, "", "Nam", "", "", "", mail, "", "0", "0");
             this.main.is_login = true;
             this.main.set_name_in_login_btn(name);
             this.main.is_admin = false;

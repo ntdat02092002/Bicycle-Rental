@@ -55,5 +55,11 @@ namespace Bicycle_Rental
                 Login_button.PerformClick();
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ResestPassword reset = new ResestPassword();
+            reset.ShowDialog();
+        }
     }
 }

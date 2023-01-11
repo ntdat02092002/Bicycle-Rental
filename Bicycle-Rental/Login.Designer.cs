@@ -38,16 +38,17 @@
             this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.signup_button = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(260, 71);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(195, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(417, 95);
+            this.label1.Size = new System.Drawing.Size(313, 77);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             // 
@@ -55,10 +56,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(267, 214);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(200, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 41);
+            this.label2.Size = new System.Drawing.Size(142, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "User Name:";
             // 
@@ -66,10 +66,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(293, 286);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(220, 232);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 41);
+            this.label3.Size = new System.Drawing.Size(122, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "Password:";
             // 
@@ -84,10 +83,9 @@
             this.Login_button.FillColor = System.Drawing.Color.Red;
             this.Login_button.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_button.ForeColor = System.Drawing.Color.White;
-            this.Login_button.Location = new System.Drawing.Point(725, 370);
-            this.Login_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Login_button.Location = new System.Drawing.Point(544, 301);
             this.Login_button.Name = "Login_button";
-            this.Login_button.Size = new System.Drawing.Size(187, 49);
+            this.Login_button.Size = new System.Drawing.Size(140, 40);
             this.Login_button.TabIndex = 5;
             this.Login_button.Text = "Login";
             this.Login_button.Click += new System.EventHandler(this.Login_button_Click);
@@ -96,20 +94,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(140, 532);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(105, 432);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(345, 41);
+            this.label4.Size = new System.Drawing.Size(277, 32);
             this.label4.TabIndex = 6;
             this.label4.Text = "Don\'t Have an Account?";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(896, 30);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(672, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(501, 556);
+            this.pictureBox1.Size = new System.Drawing.Size(376, 452);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -128,13 +124,13 @@
             this.txt_username.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_username.ForeColor = System.Drawing.Color.Black;
             this.txt_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_username.Location = new System.Drawing.Point(477, 214);
-            this.txt_username.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_username.Location = new System.Drawing.Point(358, 174);
+            this.txt_username.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_username.Name = "txt_username";
             this.txt_username.PasswordChar = '\0';
             this.txt_username.PlaceholderText = "";
             this.txt_username.SelectedText = "";
-            this.txt_username.Size = new System.Drawing.Size(435, 44);
+            this.txt_username.Size = new System.Drawing.Size(326, 36);
             this.txt_username.TabIndex = 2;
             // 
             // txt_password
@@ -151,13 +147,13 @@
             this.txt_password.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.ForeColor = System.Drawing.Color.Black;
             this.txt_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_password.Location = new System.Drawing.Point(477, 286);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_password.Location = new System.Drawing.Point(358, 232);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
             this.txt_password.PlaceholderText = "";
             this.txt_password.SelectedText = "";
-            this.txt_password.Size = new System.Drawing.Size(435, 44);
+            this.txt_password.Size = new System.Drawing.Size(326, 36);
             this.txt_password.TabIndex = 4;
             this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyDown);
             // 
@@ -166,20 +162,44 @@
             this.signup_button.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signup_button.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.signup_button.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.signup_button.Location = new System.Drawing.Point(505, 532);
-            this.signup_button.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.signup_button.Location = new System.Drawing.Point(379, 432);
             this.signup_button.Name = "signup_button";
-            this.signup_button.Size = new System.Drawing.Size(193, 49);
+            this.signup_button.Size = new System.Drawing.Size(145, 40);
             this.signup_button.TabIndex = 9;
             this.signup_button.TabStop = true;
             this.signup_button.Text = "SignUp";
             this.signup_button.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signup_button_LinkClicked);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel1.Location = new System.Drawing.Point(482, 272);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(69, 31);
+            this.linkLabel1.TabIndex = 11;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Reset";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(354, 272);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(134, 21);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Forgot password?";
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1577, 630);
+            this.ClientSize = new System.Drawing.Size(1155, 512);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.signup_button);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Login_button);
@@ -189,7 +209,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -209,5 +228,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_username;
         private Guna.UI2.WinForms.Guna2TextBox txt_password;
         private System.Windows.Forms.LinkLabel signup_button;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label5;
     }
 }
