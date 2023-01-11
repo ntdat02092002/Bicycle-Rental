@@ -40,7 +40,8 @@ namespace Bicycle_Rental
             DateTime ngaylay = this.NgayLay.Value;
             DateTime ngaytra = this.NgayTra.Value;
             int gia = Convert.ToInt32(Database.Bicycle.Select("maxe='" + bicycle1.GetMaxe.ToString() + "'")[0]["giathue"].ToString());
-            int total_day = int.Parse((ngaytra - ngaylay).TotalDays.ToString());
+            string Total = (ngaytra - ngaylay).TotalDays.ToString();
+            int total_day = Convert.ToInt32((ngaytra - ngaylay).TotalDays);
             total = gia * total_day;
             this.total_price.Text = String.Format("Total: {0}$", total);
         }

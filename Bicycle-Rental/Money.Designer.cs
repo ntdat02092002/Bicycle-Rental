@@ -105,7 +105,7 @@ namespace Bicycle_Rental
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.ImageSize = new System.Drawing.Size(30, 28);
-            this.guna2Button1.Location = new System.Drawing.Point(212, 27);
+            this.guna2Button1.Location = new System.Drawing.Point(518, 5);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(87, 33);
             this.guna2Button1.TabIndex = 27;
@@ -154,9 +154,9 @@ namespace Bicycle_Rental
             // cboCamera
             // 
             this.cboCamera.FormattingEnabled = true;
-            this.cboCamera.Location = new System.Drawing.Point(273, 56);
+            this.cboCamera.Location = new System.Drawing.Point(347, 56);
             this.cboCamera.Name = "cboCamera";
-            this.cboCamera.Size = new System.Drawing.Size(183, 21);
+            this.cboCamera.Size = new System.Drawing.Size(238, 21);
             this.cboCamera.TabIndex = 30;
             // 
             // txtBarcode
