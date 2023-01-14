@@ -330,6 +330,7 @@ namespace Bicycle_Rental
             this.Speed_radio.FormattingEnabled = true;
             this.Speed_radio.Items.AddRange(new object[] {
             "None",
+            "10 Speed Bike",
             "24 Speed Bike",
             "27 Speed Bike"});
             this.Speed_radio.Location = new System.Drawing.Point(759, 39);

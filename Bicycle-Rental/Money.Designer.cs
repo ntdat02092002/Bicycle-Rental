@@ -107,9 +107,9 @@ namespace Bicycle_Rental
             this.guna2Button1.ImageSize = new System.Drawing.Size(30, 28);
             this.guna2Button1.Location = new System.Drawing.Point(518, 5);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(87, 33);
+            this.guna2Button1.Size = new System.Drawing.Size(92, 33);
             this.guna2Button1.TabIndex = 27;
-            this.guna2Button1.Text = "Money:";
+            this.guna2Button1.Text = "Balance:";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button1.TextChanged += new System.EventHandler(this.guna2Button1_TextChanged);
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -203,9 +203,9 @@ namespace Bicycle_Rental
             this.guna2Button3.ImageSize = new System.Drawing.Size(30, 28);
             this.guna2Button3.Location = new System.Drawing.Point(129, 359);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(83, 28);
+            this.guna2Button3.Size = new System.Drawing.Size(82, 28);
             this.guna2Button3.TabIndex = 27;
-            this.guna2Button3.Text = "Barcode:";
+            this.guna2Button3.Text = "Amount:";
             this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
