@@ -603,7 +603,7 @@
             this.Join_A_Group_Tour.Name = "Join_A_Group_Tour";
             this.Join_A_Group_Tour.Size = new System.Drawing.Size(169, 30);
             this.Join_A_Group_Tour.TabIndex = 19;
-            this.Join_A_Group_Tour.Text = "Join A Group Tour";
+            this.Join_A_Group_Tour.Text = "Join Us";
             this.Join_A_Group_Tour.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Join_A_Group_Tour.Click += new System.EventHandler(this.Join_A_Group_Tour_Click);
             this.Join_A_Group_Tour.MouseLeave += new System.EventHandler(this.Contact_panel_MouseLeave);
